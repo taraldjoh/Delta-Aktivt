@@ -1,0 +1,14 @@
+.nav-item {
+    padding: 1rem;
+}
+
+.navbar-light .nav-item .nav-link {
+    color: #7bdecb;
+    font-size: 1.25rem;
+    transition: 0.2s all ease-in-out;
+}
+
+.navbar-light .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #fc43d4;
+}
