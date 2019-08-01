@@ -1,14 +1,42 @@
 /* GLOBAL STYLES/CLASSES */
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
-  }
+}
 
+.button {
+    background-color: #7bdecb;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem 6rem;
+    border: none;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.button-secondary {
+    background-color: #7bdecb;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem 6rem;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.button:hover,
+.button-secondary:hover {
+    background-color: #68bdac;
+}
+
+.button:focus {
+    outline: none;
+}
 
 /* NAVBAR */
 .nav-item {
@@ -29,8 +57,6 @@
     color: #fc43d4;
 }
 
-
-
 /* CAROUSEL */
 .carousel-inner {
     max-height: 750px;
@@ -42,13 +68,13 @@
     left: 0;
 }
 
-.carousel-caption-item{
+.carousel-caption-item {
     display: flex;
     justify-content: space-between;
 }
 
-.carousel-item img{
-    height: 650px;
+.carousel-item img {
+    max-height: 650px;
 }
 
 .read-more-btn {
@@ -56,14 +82,14 @@
     margin-right: 3rem;
     right: 0;
     border-radius: 50%;
-    background: #7BDECB;
+    background: #7bdecb;
     color: #fff;
     text-align: center;
     font-size: 2.5rem;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
-.read-more-btn:hover{
+.read-more-btn:hover {
     background-color: #68bdac;
     text-decoration: none;
     color: #fff;
@@ -72,7 +98,7 @@
 .carousel-img-textbox {
     text-align: left;
     width: 35%;
-    background-color: #F98FA0;
+    background-color: #f98fa0;
     padding: 2rem;
 }
 
@@ -90,4 +116,96 @@
 
 .carousel-indicators .active {
     background-color: #bfc3c7;
+}
+
+/* BUTTON SECTION */
+.button-container {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-container .round-button {
+    padding: 6rem;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.button-container a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+/* ORDER SECTION */
+.order-container {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.order-container h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #7bdecb;
+}
+
+/* NEWS SECTION */
+.news-container .image-items-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.news-container #span-one {
+    position: absolute;
+    padding: 4rem 2rem;
+    background-color: #f98fa0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 50%;
+    top: 50px;
+    z-index: 2;
+}
+
+.news-container #span-two {
+    position: absolute;
+    font-size: 2rem;
+    padding: 2rem;
+    color: #f98fa0;
+    background-color: #f2f2f2cc;
+    top: 200px;
+    width: 600px;
+}
+
+.news-container #span-three {
+    position: absolute;
+    background-color: #f98fa0;
+    font-size: 1rem;
+    padding: 1rem;
+    color: #fff;
+    font-weight: bold;
+    top: 300px;
+    left: 100px;
+    width: 200px;
+}
+
+#news-section {
+    text-align: right;
+}
+
+#news-section button {
+    margin-top: 2rem;
 }
