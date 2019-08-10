@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Landing from "../landing/Landing";
 import Navbar from "../navbar/Navbar";
