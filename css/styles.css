@@ -48,6 +48,9 @@ a {
 }
 
 /* NAVBAR */
+.navbar {
+    background-color: #fff;
+}
 .nav-item {
     padding: 1rem;
 }
