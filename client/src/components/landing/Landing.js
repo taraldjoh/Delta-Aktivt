@@ -1,32 +1,23 @@
-import React from "react";
+import React, { Fragment } from "react";
 import LandingCarousel from "../carousel/Carousel";
-import carousel_1 from "../../images/carousel_1.png";
+import Container from "../common/Container";
 
 const Landing = () => {
     return (
-        <div>
+        <Fragment>
             <LandingCarousel />
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-            <h1>hello</h1>
-        </div>
+            <Container>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+                <h1>hello</h1>
+            </Container>
+        </Fragment>
     );
 };
 
