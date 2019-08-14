@@ -14,22 +14,30 @@ const App = () => {
 export default App;
 
 const GlobalStyle = createGlobalStyle`
+
+    html {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     body {
         margin: 0;
         padding: 0;
         font-family: 'Oswald', sans-serif;
         -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     h1, h2, h3, h4, h5, a {
         margin: 0;
         padding: 0;
         margin-bottom: 1rem;
-        color: #444444;
+        color: #7bdecb;
         font-family: 'Oswald', sans-serif;
         letter-spacing: 1px;
         font-weight: 400;
