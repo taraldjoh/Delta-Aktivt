@@ -13,8 +13,8 @@ export default RoundImage;
 
 const StyledDiv = styled.div`
     position: relative;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     display: flex;
     justify-content: center;

@@ -14,6 +14,7 @@ export default SplitTextContainer;
 
 const StyledDiv = styled.div`
     display: flex;
+    margin: 4rem 0;
 
     @media screen and (max-width: 1000px) {
         flex-direction: column;
@@ -54,7 +55,9 @@ const StyledRightContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.25rem;
+    p {
+        font-size: 1.15rem;
+    }
 
     @media screen and (max-width: 1000px) {
         width: 100%;

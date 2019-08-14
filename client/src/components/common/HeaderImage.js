@@ -7,7 +7,7 @@ export default HeaderImage;
 
 const StyledDiv = styled.div`
     position: relative;
-    height: 40vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,7 +16,6 @@ const StyledDiv = styled.div`
 
     ::after {
         content: "";
-        position: absolute;
         top: 0;
         left: 0;
         height: 100%;
@@ -26,5 +25,9 @@ const StyledDiv = styled.div`
         background-repeat: no-repeat;
         background-position: center center;
         z-index: -1;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 25vh;
     }
 `;
