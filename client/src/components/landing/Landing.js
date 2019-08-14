@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import LandingCarousel from "../carousel/Carousel";
+import LandingCarousel from "../carousel/LandingCarousel";
 import Container from "../common/Container";
 import RoundImage from "../common/RoundImage";
+import Button from "../common/Button";
 
 import carousel_1 from "../../images/carousel_1.png";
 
@@ -17,14 +18,8 @@ const Landing = () => {
                     <RoundImage image={carousel_1} text={"bedrift"} />
                 </StyledImageContainer>
 
-                <h1>hello</h1>
-                <h1>hello</h1>
-                <h1>hello</h1>
-                <h1>hello</h1>
-                <h1>hello</h1>
-                <h1>hello</h1>
-                <h1>hello</h1>
-                <h1>hello</h1>
+                <StyledHeader>Bestill time hos oss nå</StyledHeader>
+                <Button text="klikk her" destination="/about" />
             </Container>
         </Fragment>
     );
@@ -38,4 +33,10 @@ const StyledImageContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+`;
+
+const StyledHeader = styled.h1`
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 `;
