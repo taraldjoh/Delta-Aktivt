@@ -15,6 +15,8 @@ const StyledDiv = styled.div`
     position: relative;
     height: 250px;
     width: 250px;
+    min-width: 250px;
+    min-height: 250px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
