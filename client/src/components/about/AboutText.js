@@ -15,7 +15,7 @@ const StyledLeftP = styled.p`
 
 const StyledRightP = styled.p`
     line-height: 2;
-
+    text-align: left;
     margin-bottom: 1.5rem;
 `;
 

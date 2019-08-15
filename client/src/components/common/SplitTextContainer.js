@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
 `;
 
 const StyledLeftContainer = styled.div`
-    text-align: right;
+    text-align: left;
     padding: 2rem 3rem;
     width: 30%;
     border-right: 1px solid #000;
@@ -34,7 +34,7 @@ const StyledLeftContainer = styled.div`
         grid-template-columns: repeat(3, 1fr);
         border: none;
         width: 100%;
-        text-align: center;
+        text-align: left;
         grid-gap: 1rem;
         padding: 0;
         border-bottom: 1px solid #000;

@@ -17,9 +17,7 @@ const Physio = () => {
             <HeaderImage image={aboutheader} />
             <Container>
                 <PhysioMethods />
-                <Title text="Behandlingstilbud" />
-                <SplitTextContainer textLeft={textLeft} textRight={textRight} />
-                <Title text="Pris" />
+                <Title text="Priser" />
                 <Pricing />
             </Container>
         </Wrapper>

@@ -3,13 +3,31 @@ import styled from "styled-components";
 
 import pricedProducts from "./pricedProducts";
 
+const extraItems = [
+    {
+        name: "Kinesiotape (evt annen tape",
+        price: "100,- per behandling"
+    }
+];
+
 const Pricing = () => {
     const renderProducts = () => {
-        return pricedProducts.map(v => {
+        return pricedProducts.map(item => {
             return (
                 <StyledProductContainer>
-                    <span>{v.name}</span>
-                    <span>{v.price}</span>
+                    <span>{item.name}</span>
+                    <span>{item.price}</span>
+                </StyledProductContainer>
+            );
+        });
+    };
+
+    const renderExtras = () => {
+        return extraItems.map((item, i) => {
+            return (
+                <StyledProductContainer>
+                    <span>{item.name}</span>
+                    <span>{item.price}</span>
                 </StyledProductContainer>
             );
         });
@@ -17,8 +35,10 @@ const Pricing = () => {
 
     return (
         <StyledWrapper>
-            <h2 style={{ textAlign: "left" }}>Gjeldende fra 1. Januar 2017</h2>
+            <StyledTitle>Gjeldende fra 1. Januar 2017</StyledTitle>
             {renderProducts()}
+            <StyledTitle>Tileggskostnader</StyledTitle>
+            {renderExtras()}
         </StyledWrapper>
     );
 };
@@ -28,6 +48,12 @@ export default Pricing;
 const StyledWrapper = styled.div`
     margin: 0 5rem;
     padding: 0 3rem;
+`;
+
+const StyledTitle = styled.h2`
+    font-weight: bold;
+    color: #000;
+    text-align: left;
 `;
 
 const StyledProductContainer = styled.div`
@@ -41,15 +67,9 @@ const StyledProductContainer = styled.div`
 
     :hover {
         span {
-            opacity: 0.75;
+            color: #f7668b;
+
             cursor: default;
         }
     }
-`;
-
-const StyledProdu = styled.ul`
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 `;

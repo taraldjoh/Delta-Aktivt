@@ -50,8 +50,10 @@ const RenderNavLinks = ({ match, history }) => {
 export default withRouter(RenderNavLinks);
 
 const StyledLi = styled.li`
-    color: #7bdecb;
+    color: #6da39a;
     padding: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 1.25;
     transition: 0.2s all ease-in-out;
     :hover {
         color: #fc43d4;

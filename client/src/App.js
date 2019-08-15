@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
         -ms-animation: fadein 2s; /* Internet Explorer */
         -o-animation: fadein 2s; /* Opera < 12.1 */
         animation: fadein 2s;
-
+        background: #fafafa;
         max-width: 100%;
         overflow-x: hidden;
     }
