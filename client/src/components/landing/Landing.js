@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import LandingCarousel from "../carousel/LandingCarousel";
 import Container from "../common/Container";
@@ -6,10 +6,11 @@ import RoundImage from "../common/RoundImage";
 import Button from "../common/Button";
 
 import carousel_1 from "../../images/carousel_1.png";
+import Wrapper from "../common/Wrapper";
 
 const Landing = () => {
     return (
-        <Fragment>
+        <Wrapper>
             <LandingCarousel />
             <Container>
                 <StyledImageContainer>
@@ -21,7 +22,7 @@ const Landing = () => {
                 <StyledHeader>Bestill time hos oss nå</StyledHeader>
                 <Button text="klikk her" destination="/about" />
             </Container>
-        </Fragment>
+        </Wrapper>
     );
 };
 

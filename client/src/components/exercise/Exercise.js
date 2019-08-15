@@ -7,17 +7,18 @@ import Container from "../common/Container";
 import SplitTextContainer from "../common/SplitTextContainer";
 import { textLeft, textRight } from "./IndividualTrainingText";
 import GroupTraining from "./GroupTraining";
+import Wrapper from "../common/Wrapper";
 
 const Exercise = () => {
     return (
-        <Fragment>
+        <Wrapper>
             <HeaderImage image={treningsheader} />
             <Container>
                 <Schedule />
                 <SplitTextContainer textLeft={textLeft} textRight={textRight} />
                 <GroupTraining />
             </Container>
-        </Fragment>
+        </Wrapper>
     );
 };
 

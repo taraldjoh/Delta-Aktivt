@@ -8,10 +8,11 @@ import Container from "../common/Container";
 import { textLeft, textRight } from "./AboutText";
 import AboutTeam from "./AboutTeam";
 import Privacy from "../privacy/Privacy";
+import Wrapper from "../common/Wrapper";
 
 const About = () => {
     return (
-        <Fragment>
+        <Wrapper>
             <HeaderImage image={aboutheader} />
             <Container>
                 <SplitTextContainer textLeft={textLeft} textRight={textRight} />
@@ -19,7 +20,7 @@ const About = () => {
                 <AboutTeam />
                 <Privacy />
             </Container>
-        </Fragment>
+        </Wrapper>
     );
 };
 
