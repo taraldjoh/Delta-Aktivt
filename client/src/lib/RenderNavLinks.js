@@ -12,7 +12,7 @@ const options = [
         text: "Om Oss"
     },
     {
-        path: "/excercise",
+        path: "/exercise",
         text: "Trening"
     },
     {
