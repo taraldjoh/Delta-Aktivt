@@ -51,7 +51,7 @@ const StyledLeftContainer = styled.div`
 
 const StyledRightContainer = styled.div`
     width: 60%;
-    padding: 4rem;
+    padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
