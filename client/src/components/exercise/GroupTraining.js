@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import RoundImage from "../common/RoundImage";
+import Title from "../common/Title";
 
 const items = [
     {
@@ -58,7 +59,7 @@ const GroupTraining = () => {
 
     return (
         <StyledWrapper>
-            <StyledHeader>Gruppetrening</StyledHeader>
+            <Title text="Gruppetrening" />
             <StyledImageContainer>{renderItems()}</StyledImageContainer>
         </StyledWrapper>
     );
@@ -70,13 +71,6 @@ const StyledWrapper = styled.div`
     margin: 4rem 0;
 `;
 
-const StyledHeader = styled.h1`
-    padding: 2rem;
-    border-bottom: 1px solid #000;
-    color: #000;
-    margin-bottom: 4rem;
-`;
-
 const StyledImageContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -84,6 +78,10 @@ const StyledImageContainer = styled.div`
     grid-row-gap: 5rem;
     margin: 0 3rem;
     padding: 0 2rem;
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 const StyledItemContainer = styled.div`
