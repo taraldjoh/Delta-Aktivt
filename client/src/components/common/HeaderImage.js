@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeaderImage = ({ image, text }) => <StyledDiv image={image} />;
+const HeaderImage = ({ image, text }) => (
+    <StyledDiv image={image}>
+        <StyledText>{text}</StyledText>
+    </StyledDiv>
+);
 
 export default HeaderImage;
 
@@ -16,6 +20,8 @@ const StyledDiv = styled.div`
 
     ::after {
         content: "";
+        position: absolute;
+
         top: 0;
         left: 0;
         height: 100%;
@@ -30,4 +36,10 @@ const StyledDiv = styled.div`
     @media screen and (max-width: 600px) {
         height: 25vh;
     }
+`;
+
+const StyledText = styled.h1`
+    color: #fff;
+    opacity: 1;
+    font-size: 5rem;
 `;

@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     p {
-        color: #757575;
+        color: #0e0e0e;
         opacity: 0.85;
         font-size: 14px;
         line-height: 1.8;

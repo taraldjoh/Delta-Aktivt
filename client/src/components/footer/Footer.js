@@ -74,7 +74,7 @@ const Footer = ({ history }) => {
 export default withRouter(Footer);
 
 const StyledFooter = styled.footer`
-    background-color: #7bdecb;
+    background-color: #158175;
     color: #fff;
     height: 150px;
 `;
