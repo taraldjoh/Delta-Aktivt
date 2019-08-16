@@ -5,22 +5,52 @@ import Container from "../common/Container";
 import RoundImage from "../common/RoundImage";
 import Button from "../common/Button";
 
-import carousel_1 from "../../images/carousel_1.png";
+import round_1 from "../../images/landing/round_1.png";
+import round_2 from "../../images/landing/round_2.png";
+import round_3 from "../../images/landing/round_3.png";
+
 import Wrapper from "../common/Wrapper";
 
+const images = [
+    {
+        text: "trening",
+        image: round_1,
+        destination: "/exercise"
+    },
+    {
+        text: "fysio",
+        image: round_2,
+        destination: "/activities"
+    },
+    {
+        text: "bedrift",
+        image: round_3,
+        destination: "/activities"
+    }
+];
+
 const Landing = () => {
+    const renderRoundImages = () => {
+        return images.map((image, i) => {
+            return (
+                <RoundImage
+                    image={image.image}
+                    text={image.text}
+                    destination={image.destination}
+                />
+            );
+        });
+    };
+
     return (
         <Wrapper>
             <LandingCarousel />
             <Container>
-                <StyledImageContainer>
-                    <RoundImage image={carousel_1} text={"trening"} />
-                    <RoundImage image={carousel_1} text={"fysio"} />
-                    <RoundImage image={carousel_1} text={"bedrift"} />
-                </StyledImageContainer>
-
                 <StyledHeader>Bestill time hos oss nå</StyledHeader>
                 <Button text="klikk her" destination="/about" />
+                <StyledImageContainer>
+                    {renderRoundImages()}
+                </StyledImageContainer>
             </Container>
         </Wrapper>
     );

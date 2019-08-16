@@ -16,8 +16,8 @@ const options = [
         text: "Trening"
     },
     {
-        path: "/physio",
-        text: "Fysio"
+        path: "/services",
+        text: "Tjenester"
     },
     {
         path: "/company",

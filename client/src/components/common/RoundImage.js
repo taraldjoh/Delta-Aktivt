@@ -1,15 +1,26 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import styled from "styled-components";
 
-const RoundImage = ({ image, text }) => {
+const RoundImage = ({ image, text, destination, history }) => {
     return (
-        <StyledDiv image={image}>
+        <StyledDiv
+            image={image}
+            onClick={
+                destination
+                    ? () => {
+                          history.push(`${destination}`);
+                      }
+                    : null
+            }
+            style={destination ? { cursor: "pointer" } : null}
+        >
             <StyledText>{text}</StyledText>
         </StyledDiv>
     );
 };
 
-export default RoundImage;
+export default withRouter(RoundImage);
 
 const StyledDiv = styled.div`
     position: relative;
