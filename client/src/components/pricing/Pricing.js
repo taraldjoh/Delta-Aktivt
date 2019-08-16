@@ -5,9 +5,26 @@ import pricedProducts from "./pricedProducts";
 
 const extraItems = [
     {
-        name: "Kinesiotape (evt annen tape",
+        name: "Kinesiotape (evt annen tape)",
         price: "100,- per behandling"
+    },
+    {
+        name: "Nålebehandling",
+        price: "60,- per behandling"
+    },
+    {
+        name: "Utarbeiding av treningsprogram",
+        price: "50,-"
+    },
+    {
+        name: "Rapporter og attester (avhengig av omfang)",
+        price: "50 - 150,-"
     }
+];
+
+const terms = [
+    "Ubenyttede timer som ikke er avbestilt senest 24 timer i forkant av oppsatt time, må dessverre betales i sin helhet.",
+    "Fysioterapeutene i Delta Aktivt har ikke driftsavtale med kommunen, og pasientene trenger derfor ikke rekvisisjon fra lege. Vi har kort venteliste, og kan garantere behandling innen 3 virkedager."
 ];
 
 const Pricing = () => {
@@ -15,8 +32,8 @@ const Pricing = () => {
         return pricedProducts.map(item => {
             return (
                 <StyledProductContainer>
-                    <span>{item.name}</span>
-                    <span>{item.price}</span>
+                    <StyledSpan>{item.name}</StyledSpan>
+                    <StyledSpan>{item.price}</StyledSpan>
                 </StyledProductContainer>
             );
         });
@@ -26,9 +43,19 @@ const Pricing = () => {
         return extraItems.map((item, i) => {
             return (
                 <StyledProductContainer>
-                    <span>{item.name}</span>
-                    <span>{item.price}</span>
+                    <StyledSpan>{item.name}</StyledSpan>
+                    <StyledSpan>{item.price}</StyledSpan>
                 </StyledProductContainer>
+            );
+        });
+    };
+
+    const renderTerms = () => {
+        return terms.map(term => {
+            return (
+                <StyledTermContainer>
+                    <StyledSpan>{term}</StyledSpan>
+                </StyledTermContainer>
             );
         });
     };
@@ -39,6 +66,8 @@ const Pricing = () => {
             {renderProducts()}
             <StyledTitle>Tileggskostnader</StyledTitle>
             {renderExtras()}
+            <StyledTitle>Betingelser</StyledTitle>
+            {renderTerms()}
         </StyledWrapper>
     );
 };
@@ -48,23 +77,20 @@ export default Pricing;
 const StyledWrapper = styled.div`
     margin: 0 5rem;
     padding: 0 3rem;
+    text-align: left;
 `;
 
 const StyledTitle = styled.h2`
     font-weight: bold;
     color: #000;
     text-align: left;
+    margin: 3rem 0;
 `;
 
 const StyledProductContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
-    span {
-        transition: all 0.2s ease-in-out;
-        font-size: 1.25rem;
-    }
-
+    margin-bottom: 1.5rem;
     :hover {
         span {
             color: #f7668b;
@@ -72,4 +98,13 @@ const StyledProductContainer = styled.div`
             cursor: default;
         }
     }
+`;
+
+const StyledSpan = styled.span`
+    transition: all 0.2s ease-in-out;
+    font-size: 1.25rem;
+`;
+
+const StyledTermContainer = styled.div`
+    margin: 2rem 0;
 `;

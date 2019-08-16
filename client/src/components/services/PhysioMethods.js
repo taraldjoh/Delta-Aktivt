@@ -26,21 +26,16 @@ export default function PhysioMethods() {
     };
     return (
         <Fragment>
-            <StyledHeader>
-                Vi benytter ulike fysikalske behandlingsmetoder:
-            </StyledHeader>
             <StyledListItemWrapper>{renderListItems()}</StyledListItemWrapper>
             <Button text="Bestill Time" destination="" />
         </Fragment>
     );
 }
 
-const StyledHeader = styled.h1`
-    color: #000;
-    text-align: left;
+const StyledListItemWrapper = styled.div`
+    margin: 0 5rem;
+    padding: 0 3rem;
 `;
-
-const StyledListItemWrapper = styled.div``;
 
 const StyledItemContainer = styled.div`
     display: flex;
@@ -69,7 +64,7 @@ const StyledCircle = styled.div`
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: #7bdecb;
+        background-color: #158175;
         z-index: -1;
         opacity: 1;
     }

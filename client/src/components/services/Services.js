@@ -3,19 +3,18 @@ import styled from "styled-components";
 import Wrapper from "../common/Wrapper";
 import HeaderImage from "../common/HeaderImage";
 
-import aboutheader from "../../images/about/aboutheader.png";
+import header from "../../images/services/header.png";
 import Container from "../common/Container";
 import PhysioMethods from "./PhysioMethods";
 import Title from "../common/Title";
-import SplitTextContainer from "../common/SplitTextContainer";
-import { textLeft, textRight } from "./TreatmentOfferText";
 import Pricing from "../pricing/Pricing";
 
-const Physio = () => {
+const Services = () => {
     return (
         <Wrapper>
-            <HeaderImage image={aboutheader} />
+            <HeaderImage image={header} text={"TJENESTER"} />
             <Container>
+                <Title text="Vi benytter ulike fysikalske behandlingsmetoder" />
                 <PhysioMethods />
                 <Title text="Priser" />
                 <Pricing />
@@ -24,4 +23,4 @@ const Physio = () => {
     );
 };
 
-export default Physio;
+export default Services;
