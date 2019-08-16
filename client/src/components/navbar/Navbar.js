@@ -6,7 +6,7 @@ import RenderNavLinks from "../../lib/RenderNavLinks";
 
 const Navbar = ({ history }) => {
     return (
-        <StyledNav>
+        <StyledNav className="noSelect">
             <StyledContainer>
                 <StyledLogo
                     src={Logo}
@@ -25,6 +25,7 @@ export default withRouter(Navbar);
 
 const StyledNav = styled.nav`
     width: 100%;
+    background-color: #fff;
 `;
 
 const StyledContainer = styled.div`

@@ -13,7 +13,7 @@ import Wrapper from "../common/Wrapper";
 const About = () => {
     return (
         <Wrapper>
-            <HeaderImage image={aboutheader} />
+            <HeaderImage image={aboutheader} text="OM OSS" />
             <Container>
                 <SplitTextContainer textLeft={textLeft} textRight={textRight} />
                 <StyledHeader>vårt team</StyledHeader>
