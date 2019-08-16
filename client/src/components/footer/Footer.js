@@ -25,18 +25,18 @@ const Footer = ({ history }) => {
                                 <a
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    href="https://www.facebook.com"
+                                    href="https://www.facebook.com/deltaaktivt"
                                 >
-                                    <Facebook size={50} />
+                                    <Facebook size={75} />
                                 </a>
                             </li>
                             <li>
                                 <a
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    href="https://www.instagram.com"
+                                    href="https://www.instagram.com/deltaaktivt"
                                 >
-                                    <Instagram size={50} />
+                                    <Instagram size={75} />
                                 </a>
                             </li>
                         </StyledUl>

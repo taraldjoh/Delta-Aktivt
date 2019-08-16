@@ -76,8 +76,8 @@ const StyledImageContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     grid-row-gap: 5rem;
-    margin: 0 3rem;
-    padding: 0 2rem;
+    margin: 0 2rem;
+    padding: 0 1.5rem;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: repeat(1, 1fr);
@@ -88,11 +88,19 @@ const StyledItemContainer = styled.div`
     display: flex;
     align-items: center;
     padding: 0 2rem;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
 `;
 
 const StyledTextContainer = styled.div`
     margin-left: 2rem;
     text-align: left;
+
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
 `;
 
 const StyledTextHeader = styled.p`

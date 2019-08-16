@@ -42,4 +42,8 @@ const StyledText = styled.h1`
     color: #fff;
     opacity: 1;
     font-size: 5rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 3rem;
+    }
 `;

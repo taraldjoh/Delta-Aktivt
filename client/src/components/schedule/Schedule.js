@@ -1,19 +1,21 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
+import { ChevronLeft } from "react-feather";
+import Button from "../common/Button";
+
+import timeplan from "../../images/exercise/timeplan.jpg";
 
 const Schedule = () => {
     return (
         <Fragment>
-            <StyledHeader>Insert shit schedule here >.></StyledHeader>
-            <StyledDaysContainer>
-                <StyledDaysP>Mandag</StyledDaysP>
-                <StyledDaysP>tirsdag</StyledDaysP>
-                <StyledDaysP>onsdag</StyledDaysP>
-                <StyledDaysP>torsdag</StyledDaysP>
-                <StyledDaysP>fredag</StyledDaysP>
-                <StyledDaysP>lørdag</StyledDaysP>
-                <StyledDaysP>søndag</StyledDaysP>
-            </StyledDaysContainer>
+            <StyledTitleContainer>
+                {/* <StyledCircle>
+                    <ChevronLeft size={80} />
+                </StyledCircle> */}
+                <StyledHeader>Timeplan House of Motion 2019</StyledHeader>
+            </StyledTitleContainer>
+            <StyledImage src={timeplan} />
+            <Button text={"Last ned timeplan"} destination={"/"} />
         </Fragment>
     );
 };
@@ -22,18 +24,33 @@ export default Schedule;
 
 const StyledHeader = styled.h1`
     color: #000;
+    text-transform: uppercase;
 `;
 
-const StyledDaysContainer = styled.div`
-    display: Grid;
-    grid-template-columns: repeat(7, 1fr);
-    padding-bottom: 4rem;
-    border-bottom: 1px solid #000;
+const StyledImage = styled.img`
+    max-width: 100%;
 `;
 
-const StyledDaysP = styled.p`
-    color: #fff;
-    background-color: #f98fa0;
-    font-weight: bold;
-    padding: 1rem;
+// const StyledCircle = styled.div`
+//     background-color: #87e2d5;
+//     border-radius: 50%;
+//     left: 100px;
+//     position: absolute;
+//     height: 150px;
+//     width: 150px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     svg {
+//         color: #fff;
+//     }
+// `;
+
+const StyledTitleContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 150px; */
+    margin-bottom: 3rem;
 `;

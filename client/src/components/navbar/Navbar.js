@@ -13,6 +13,7 @@ const Navbar = ({ history }) => {
                     onClick={() => {
                         history.push("/");
                     }}
+                    alt="brand-logo"
                 />
                 <RenderNavLinks />
             </StyledContainer>

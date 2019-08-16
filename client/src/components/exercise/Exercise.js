@@ -12,7 +12,7 @@ import Wrapper from "../common/Wrapper";
 const Exercise = () => {
     return (
         <Wrapper>
-            <HeaderImage image={treningsheader} />
+            <HeaderImage image={treningsheader} text={"TRENING"} />
             <Container>
                 <Schedule />
                 <SplitTextContainer textLeft={textLeft} textRight={textRight} />
