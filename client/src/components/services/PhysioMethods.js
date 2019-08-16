@@ -35,6 +35,11 @@ export default function PhysioMethods() {
 const StyledListItemWrapper = styled.div`
     margin: 0 5rem;
     padding: 0 3rem;
+
+    @media screen and (max-width: 1000px) {
+        margin: 0 2.5rem;
+        padding: 0 1.5rem;
+    }
 `;
 
 const StyledItemContainer = styled.div`

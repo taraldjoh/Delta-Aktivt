@@ -29,9 +29,9 @@ const terms = [
 
 const Pricing = () => {
     const renderProducts = () => {
-        return pricedProducts.map(item => {
+        return pricedProducts.map((item, i) => {
             return (
-                <StyledProductContainer>
+                <StyledProductContainer key={`item-key${i}`}>
                     <StyledSpan>{item.name}</StyledSpan>
                     <StyledSpan>{item.price}</StyledSpan>
                 </StyledProductContainer>
@@ -42,7 +42,7 @@ const Pricing = () => {
     const renderExtras = () => {
         return extraItems.map((item, i) => {
             return (
-                <StyledProductContainer>
+                <StyledProductContainer key={`item-key${i}`}>
                     <StyledSpan>{item.name}</StyledSpan>
                     <StyledSpan>{item.price}</StyledSpan>
                 </StyledProductContainer>
@@ -51,9 +51,9 @@ const Pricing = () => {
     };
 
     const renderTerms = () => {
-        return terms.map(term => {
+        return terms.map((term, i) => {
             return (
-                <StyledTermContainer>
+                <StyledTermContainer key={`item-key${i}`}>
                     <StyledSpan>{term}</StyledSpan>
                 </StyledTermContainer>
             );

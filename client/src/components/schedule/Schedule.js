@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import { ChevronLeft } from "react-feather";
+// import { ChevronLeft } from "react-feather";
 import Button from "../common/Button";
 
 import timeplan from "../../images/exercise/timeplan.jpg";

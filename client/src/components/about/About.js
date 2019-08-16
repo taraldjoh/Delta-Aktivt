@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import HeaderImage from "../common/HeaderImage";
 
 import aboutheader from "../../images/about/aboutheader.png";
