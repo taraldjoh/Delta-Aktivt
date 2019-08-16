@@ -7,6 +7,7 @@ import Footer from "../footer/Footer";
 import About from "../about/About";
 import Exercise from "../exercise/Exercise";
 import Services from "../services/Services";
+import Activities from "../activities/Activities";
 
 const Router = () => {
     return (
@@ -18,6 +19,7 @@ const Router = () => {
                 <Route exact path="/about" component={About} />
                 <Route exact path="/exercise" component={Exercise} />
                 <Route exact path="/services" component={Services} />
+                <Route exact path="/activities" component={Activities} />
             </Switch>
             <Route path="/*" component={Footer} />
         </BrowserRouter>

@@ -1,36 +1,55 @@
 import React from "react";
 import styled from "styled-components";
+import { withRouter } from "react-router-dom";
 import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import carousel_1 from "../../images/carousel_1.png";
 import "./Carousel.css";
+
+import slider_1 from "../../images/landing/carousel/slider_1.png";
+import slider_2 from "../../images/landing/carousel/slider_2.png";
+import slider_3 from "../../images/landing/carousel/slider_3.png";
 
 const carouselItems = [
     {
-        image: carousel_1,
-        header: "Item One",
+        image: slider_1,
+        header: "Tjenester",
         text:
-            "motsetning til hva mange tror, er ikke Lorem Ipsum bar tilfeldig tekst. Dets røtter springer helt tilbake til et stykke klassisk latinsk litteratur fra 45 år f.kr."
+            "Fysioterapi, Gruppe trening, Individuell trening, Personlig trener og Bedfriftstrening - alt på samme sted med gode parkeringsmulighet.",
+        path: "/services"
     },
     {
-        image: carousel_1,
-        header: "Item Two",
+        image: slider_2,
+        header: "Fokus",
         text:
-            "motsetning til hva mange tror, er ikke Lorem Ipsum bar tilfeldig tekst. Dets røtter springer helt tilbake til et stykke klassisk latinsk litteratur fra 45 år f.kr."
+            "Våre fysioterapeuter har fokus på trivsel, motiverende og tilrettelagt aktivitet og behandling. Vi er engasjerte og holder oss faglig oppdatert til enhver tid.",
+        path: "/exercise"
+    },
+    {
+        image: slider_3,
+        header: "Helse og Trening",
+        text:
+            "På Kråmyra har vi flotte og lyse lokaler, med stor gruppetreningsal, treningsrom, behandlingsrom, venterom, toalett, garderober m/dusj, lite kjøkken med hvitevarer.",
+        path: "/exercise"
     }
 ];
 
-const LandingCarousel = () => {
+const LandingCarousel = ({ history }) => {
     const renderCarouselItems = () => {
         return carouselItems.map((items, i) => {
             return (
                 <div key={`carousel-item-${i}`}>
-                    <img src={carousel_1} />
+                    <img src={items.image} />
                     <StyledCaptionContainer>
                         <StyledHeader>{items.header}</StyledHeader>
                         <StyledP>{items.text}</StyledP>
                     </StyledCaptionContainer>
-                    <StyledButton>Les Mer</StyledButton>
+                    <StyledButton
+                        onClick={() => {
+                            history.push(`${items.path}`);
+                        }}
+                    >
+                        Les Mer
+                    </StyledButton>
                 </div>
             );
         });
@@ -38,7 +57,7 @@ const LandingCarousel = () => {
     return (
         <Carousel
             showArrows={false}
-            interval={5000}
+            interval={7500}
             transitionTime={1750}
             autoPlay={true}
             infiniteLoop={true}
@@ -50,10 +69,10 @@ const LandingCarousel = () => {
     );
 };
 
-export default LandingCarousel;
+export default withRouter(LandingCarousel);
 
 const StyledCaptionContainer = styled.div`
-    background: #f98fa0;
+    background: #f7668b;
     position: absolute;
     z-index: 2;
     bottom: 50px;
@@ -69,7 +88,7 @@ const StyledCaptionContainer = styled.div`
     }
 `;
 
-const StyledHeader = styled.h5`
+const StyledHeader = styled.p`
     color: #fff;
     font-weight: bold;
     font-size: 1.75rem;

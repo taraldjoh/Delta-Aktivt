@@ -20,8 +20,8 @@ const options = [
         text: "Tjenester"
     },
     {
-        path: "/company",
-        text: "Bedrift"
+        path: "/activities",
+        text: "Aktiviteter"
     }
 ];
 
@@ -50,13 +50,13 @@ const RenderNavLinks = ({ match, history }) => {
 export default withRouter(RenderNavLinks);
 
 const StyledLi = styled.li`
-    color: #6da39a;
+    color: #158175;
     padding: 1rem;
     font-size: 1.25rem;
     letter-spacing: 1.25;
     transition: 0.2s all ease-in-out;
     :hover {
-        color: #fc43d4;
+        color: #d500b0;
         cursor: pointer;
     }
 `;
@@ -67,6 +67,6 @@ const StyledUl = styled.ul`
     padding: 0;
     margin: 0;
     .current {
-        color: #fc43d4;
+        color: #d500b0;
     }
 `;

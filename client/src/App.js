@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         margin-bottom: 1rem;
-        color: #7bdecb;
+        color: #6DA39A;
         font-family: 'Oswald', sans-serif;
         letter-spacing: 1px;
         font-weight: 400;
