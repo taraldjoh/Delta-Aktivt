@@ -108,24 +108,23 @@ const StyledButton = styled.button`
     width: 150px;
     right: 150px;
     border-radius: 50%;
-    background: #7bdecb;
+    background: #158175;
     color: #fff;
     text-align: center;
     font-size: 1.75rem;
     transition: 0.2s ease-in-out;
     border: 0;
     bottom: 50px;
-
-    -webkit-box-shadow: 0px 0px 20px -2px rgba(123, 222, 203, 1);
-    -moz-box-shadow: 0px 0px 20px -2px rgba(123, 222, 203, 1);
-    box-shadow: 0px 0px 20px -2px rgba(123, 222, 203, 1);
+    -webkit-box-shadow: 0px 0px 20px -2px rgba(21, 129, 117, 1);
+    -moz-box-shadow: 0px 0px 20px -2px rgba(21, 129, 117, 1);
+    box-shadow: 0px 0px 20px -2px rgba(21, 129, 117, 1);
 
     :hover {
         cursor: pointer;
-        background-color: #68bdac;
-        -webkit-box-shadow: 0px 0px 20px -2px rgba(104, 189, 172, 1);
-        -moz-box-shadow: 0px 0px 20px -2px rgba(104, 189, 172, 1);
-        box-shadow: 0px 0px 20px -2px rgba(104, 189, 172, 1);
+        background-color: #f98fa0;
+        -webkit-box-shadow: 0px 0px 20px -2px rgba(249, 143, 160, 1);
+        -moz-box-shadow: 0px 0px 20px -2px rgba(249, 143, 160, 1);
+        box-shadow: 0px 0px 20px -2px rgba(249, 143, 160, 1);
     }
     :focus {
         outline: 0;

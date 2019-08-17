@@ -86,7 +86,7 @@ const StyledTextContainer = styled.div`
 
 const StyledNameHeader = styled.p`
     margin-top: 1rem;
-    color: #f98fa0;
+    color: #f7668b;
     font-weight: 600;
     font-size: 1.5rem;
 `;

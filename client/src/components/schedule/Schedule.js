@@ -13,8 +13,8 @@ const Schedule = () => {
                     <ChevronLeft size={80} />
                 </StyledCircle> */}
                 <StyledHeader>Timeplan House of Motion 2019</StyledHeader>
+                <StyledImage src={timeplan} />
             </StyledTitleContainer>
-            <StyledImage src={timeplan} />
             <Button text={"Last ned timeplan"} destination={"/"} />
         </Fragment>
     );
@@ -28,7 +28,7 @@ const StyledHeader = styled.h1`
 `;
 
 const StyledImage = styled.img`
-    max-width: 100%;
+    max-width: 70%;
 `;
 
 // const StyledCircle = styled.div`
@@ -51,6 +51,7 @@ const StyledTitleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* height: 150px; */
     margin-bottom: 3rem;
 `;
