@@ -13,7 +13,8 @@ const RoundImage = ({ image, text, destination, history }) => {
                       }
                     : null
             }
-            style={destination ? { cursor: "pointer" } : null}
+            // style={destination ? { cursor: "pointer" } : null}
+            className={destination ? "clickable" : null}
         >
             <StyledText>{text}</StyledText>
         </StyledDiv>
@@ -37,9 +38,9 @@ const StyledDiv = styled.div`
     -moz-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
     box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
 
-    :hover::after {
+    /* :hover::after {
         opacity: 0.5;
-    }
+    } */
 
     ::after {
         content: "";

@@ -65,6 +65,13 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
+    .clickable {
+        cursor: pointer;
+        :hover::after {
+            opacity: 0.5;
+        }
+    }
+
     .noSelect {
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */

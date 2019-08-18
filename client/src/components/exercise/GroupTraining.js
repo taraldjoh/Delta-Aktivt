@@ -105,7 +105,7 @@ const StyledTextContainer = styled.div`
 
 const StyledTextHeader = styled.p`
     font-size: 1.25rem;
-    color: #7bdecb;
+    color: #f7668b;
     font-weight: bold;
 `;
 
