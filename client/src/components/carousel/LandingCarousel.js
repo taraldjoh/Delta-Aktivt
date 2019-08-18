@@ -63,6 +63,7 @@ const LandingCarousel = ({ history }) => {
             infiniteLoop={true}
             showThumbs={false}
             showStatus={false}
+            className="noSelect"
         >
             {renderCarouselItems()}
         </Carousel>

@@ -10,6 +10,7 @@
 
 .carousel .slide {
     background: none;
+    max-height: 60vh;
 }
 
 @media screen and (max-width: 1000px) {
