@@ -40,6 +40,10 @@ const StyledListItemWrapper = styled.div`
         margin: 0 2.5rem;
         padding: 0 1.5rem;
     }
+    @media screen and (max-width: 500px) {
+        margin: 0;
+        padding: 0;
+    }
 `;
 
 const StyledItemContainer = styled.div`

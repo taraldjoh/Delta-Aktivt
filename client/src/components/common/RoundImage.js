@@ -29,6 +29,7 @@ const StyledDiv = styled.div`
     min-width: 250px;
     min-height: 250px;
     border-radius: 50%;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;

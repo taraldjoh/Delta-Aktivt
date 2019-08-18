@@ -78,6 +78,11 @@ const StyledWrapper = styled.div`
     margin: 0 5rem;
     padding: 0 3rem;
     text-align: left;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        padding: 0;
+    }
 `;
 
 const StyledTitle = styled.h2`
@@ -85,6 +90,9 @@ const StyledTitle = styled.h2`
     color: #000;
     text-align: left;
     margin: 3rem 0;
+    @media screen and (max-width: 768px) {
+        margin: 1rem 0;
+    }
 `;
 
 const StyledProductContainer = styled.div`
@@ -96,6 +104,12 @@ const StyledProductContainer = styled.div`
             color: #f7668b;
 
             cursor: default;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        span:first-child {
+            margin-bottom: 0.35rem;
         }
     }
 `;

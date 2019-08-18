@@ -64,10 +64,19 @@ const StyledImageContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        height: auto;
+    }
 `;
 
 const StyledHeader = styled.h1`
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
 `;

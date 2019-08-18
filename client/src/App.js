@@ -110,4 +110,11 @@ const GlobalStyle = createGlobalStyle`
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@media screen and (max-width: 768px ) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
 `;

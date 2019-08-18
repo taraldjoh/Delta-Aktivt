@@ -81,6 +81,8 @@ const StyledImageContainer = styled.div`
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 0;
     }
 `;
 
