@@ -82,7 +82,7 @@ const StyledFooter = styled.footer`
 const StyledFooterContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    margin: 0 2rem;
+    margin: 0 5rem;
     padding: 0 1rem;
     height: 100%;
 `;
