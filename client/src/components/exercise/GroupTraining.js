@@ -5,39 +5,39 @@ import Title from "../common/Title";
 
 const items = [
     {
-        title: "Morgenkondis",
+        title: "MORGENKONDIS",
         content:
             "Gruppe for deg som vil trene på formiddag. Innholder både kondisjon- og styrketrening og er litt forskjellig fra dag til dag. Timen ledes av fysioterapeut. Her er det lett å tilpasse treningen etter egen form og kapasitet.",
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        title: "Morgenkondis",
+        title: "AKTIV PÅ DAGTID",
         content:
-            "Gruppe for deg som vil trene på formiddag. Innholder både kondisjon- og styrketrening og er litt forskjellig fra dag til dag. Timen ledes av fysioterapeut. Her er det lett å tilpasse treningen etter egen form og kapasitet.",
+            "Trening for deg som er langtidssykemeldt eller ufør. Inneholder både kondisjon- og styrketrening. Timen skal tilpasses den enkelts fysiske forutsetninger, slik at hver en kan trene på sitt ninå. God dialog mellom fysioterapeut/instryktør og deltaker.",
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        title: "Morgenkondis",
+        title: "BEDRIFTSTRENING",
         content:
-            "Gruppe for deg som vil trene på formiddag. Innholder både kondisjon- og styrketrening og er litt forskjellig fra dag til dag. Timen ledes av fysioterapeut. Her er det lett å tilpasse treningen etter egen form og kapasitet.",
+            "Bedrifter i Ålesund engasjere Delta Aktivt til å lede trening for ansatte. Treningen kan variere ut i fra både bedriftens, gruppen og den enkeltes behov. Treningen kan foregå både i arbeidstid eller etter arbeidstid. Treningen kan foregå i Delta Aktivt sine lokaer på Kråmyra 3 eller en annen plass og det er ønskelig. Trening utendørs er også et alternativ og gjennomføres per i dag.",
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        title: "Morgenkondis",
+        title: "4x4 INTERVALL MED STYRKE",
         content:
-            "Gruppe for deg som vil trene på formiddag. Innholder både kondisjon- og styrketrening og er litt forskjellig fra dag til dag. Timen ledes av fysioterapeut. Her er det lett å tilpasse treningen etter egen form og kapasitet.",
+            "Gruppe for deg som vil trene på ettermiddag/kveld. Intervalltrening 4x4 min blir i dag sett på som den mest effektiv måten å komme raskt i bedre kondisjon. På relativt kort tid opplever du stor fremgang. Trening er ganske tøff, men ikke tøffere enn den enkelte ønsker det. Treningen avsluttes med styrketrening i sirkel. Timen ledes av fysioterapeut.",
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        title: "Morgenkondis",
+        title: "AEROBIC + STYRKE",
         content:
-            "Gruppe for deg som vil trene på formiddag. Innholder både kondisjon- og styrketrening og er litt forskjellig fra dag til dag. Timen ledes av fysioterapeut. Her er det lett å tilpasse treningen etter egen form og kapasitet.",
+            "Aerobic er enkle stegvariasjoner med mål om moderat intensitet som gir kondisjonseffekt og varer i 35 min. Deretter starter styretrening i sirkel.  På denne gruppen kan du velge å komme til starttid eller til andre del som starter 35 min ut i timen. De som kommer direkte til styrkedelen oppfordres til å varme opp på forhånd.",
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        title: "Morgenkondis",
+        title: "CROSS",
         content:
-            "Gruppe for deg som vil trene på formiddag. Innholder både kondisjon- og styrketrening og er litt forskjellig fra dag til dag. Timen ledes av fysioterapeut. Her er det lett å tilpasse treningen etter egen form og kapasitet.",
+            "En effektiv sirkeltrening med 8-10 stasjoner, og annen hver stasjon er kondisjon og styrke. Det som er fint på denne timen er at alle trener i sitt tempo, derfor passer den for alle. Fysioterapeut vil hjelpe deg med å finne riktig belastning for deg.",
         image: "https://loremflickr.com/320/240/portrait"
     }
 ];

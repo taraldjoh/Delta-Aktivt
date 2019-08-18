@@ -4,24 +4,66 @@ import RoundImage from "../common/RoundImage";
 
 const teamMembers = [
     {
-        name: "Petter",
-        position: "irrelevant",
+        name: "Caroline Strand",
+        position: "fysioterapaut",
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        name: "Tarald",
-        position: "irrelevant",
+        name: "Thea Melkevik",
+        position: "fysioterapaut",
         image: "https://loremflickr.com/320/240/portrait",
         club: "trimklubben aktiv"
     },
     {
-        name: "AEHJDETh",
-        position: "irrelevant",
+        name: "Mathilde Harstad",
+        position: "instruktør",
+        club: "trimklubben aktiv",
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        name: "sadfsdfsdf",
-        position: "irrelevant",
+        name: "Ingrid Granøien",
+        position: "innhaver",
+        image: "https://loremflickr.com/320/240/portrait"
+    },
+    {
+        name: "Hilde Stette",
+        position: "innhaver",
+        image: "https://loremflickr.com/320/240/portrait"
+    },
+    {
+        name: "Marita Strømsheim",
+        position: "instruktør",
+        club: "trimklubben aktiv",
+        image: "https://loremflickr.com/320/240/portrait"
+    },
+    {
+        name: "Pauline Holøyen",
+        position: "fysioterapaut",
+        club: "trimklubben aktiv",
+        image: "https://loremflickr.com/320/240/portrait"
+    },
+    {
+        name: "Marita Longva",
+        position: "fysioterapaut",
+        club: "trimklubben aktiv",
+        image: "https://loremflickr.com/320/240/portrait"
+    },
+    {
+        name: "Marita Strømsheim",
+        position: "fysioterapaut",
+        club: "trimklubben aktiv",
+        image: "https://loremflickr.com/320/240/portrait"
+    },
+    {
+        name: "Torunn Otnes",
+        position: "fysioterapaut ",
+        club: "trimklubben aktiv",
+        image: "https://loremflickr.com/320/240/portrait"
+    },
+    {
+        name: "Eline Humlen Seth",
+        position: "fysioterapaut",
+        club: "aksla/godøy håndball",
         image: "https://loremflickr.com/320/240/portrait"
     }
 ];
