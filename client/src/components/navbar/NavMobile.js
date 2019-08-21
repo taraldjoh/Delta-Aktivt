@@ -14,7 +14,11 @@ const NavMobile = ({ history }) => {
     const renderMenu = () => {
         if (!active) return null;
 
-        return <h1>hello</h1>;
+        return (
+            <StyledWrapper active={active}>
+                <StyledBg onClick={() => setActive(false)} />
+            </StyledWrapper>
+        );
     };
 
     return (
@@ -34,15 +38,30 @@ const NavMobile = ({ history }) => {
 export default withRouter(NavMobile);
 
 const StyledNavContainer = styled.div`
-    position: fixed;
     z-index: 1020;
     top: 0;
     right: 0;
 `;
 
 const StyledTrigger = styled.div`
-    position: fixed;
     top: 40px;
     right: 10px;
     cursor: pointer;
+`;
+
+const StyledWrapper = styled.div`
+    display: ${({ active }) => (active ? "block" : "none")};
+`;
+
+const StyledBg = styled.div`
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.8);
+    z-index: 99;
+    animation: all 0.4s ease-in-out;
 `;

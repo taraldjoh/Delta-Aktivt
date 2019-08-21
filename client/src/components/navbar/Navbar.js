@@ -30,8 +30,22 @@ const options = [
 
 const Navbar = ({ history }) => {
     const limit = 1000;
+    const scrollBreak = 50;
 
     const [currWidth, setCurrWidth] = useState(window.innerWidth);
+    const [currPos, setCurrPos] = useState(window.scrollY);
+    console.log(currPos);
+
+    useEffect(() => {
+        window.addEventListener("scroll", updateScrollY);
+        return () => {
+            window.removeEventListener("scroll", updateScrollY);
+        };
+    }, []);
+
+    const updateScrollY = () => {
+        setCurrPos(window.scrollY);
+    };
 
     useEffect(() => {
         window.addEventListener("resize", updateWidth);
@@ -47,7 +61,10 @@ const Navbar = ({ history }) => {
     const renderOptions = () => {
         return options.map((option, i) => {
             return (
-                <StyledLi onClick={() => history.push(`${option.path}`)}>
+                <StyledLi
+                    key={`nav-item-${i}`}
+                    onClick={() => history.push(`${option.path}`)}
+                >
                     {option.text}
                 </StyledLi>
             );
@@ -55,7 +72,14 @@ const Navbar = ({ history }) => {
     };
 
     return (
-        <StyledNav className="noSelect">
+        <StyledNav
+            className="noSelect"
+            style={
+                currPos <= scrollBreak
+                    ? { position: "relative" }
+                    : { position: "fixed" }
+            }
+        >
             <StyledContainer>
                 <StyledLogo
                     src={Logo}
@@ -78,6 +102,10 @@ export default withRouter(Navbar);
 
 const StyledNav = styled.nav`
     width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1020;
     background-color: #fff;
 `;
 
