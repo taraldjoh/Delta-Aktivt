@@ -11,6 +11,7 @@ const StyledWrapper = styled.div`
     -ms-animation: fadein 0.5s; /* Internet Explorer */
     -o-animation: fadein 0.5s; /* Opera < 12.1 */
     animation: fadein 0.5s;
+    margin-top: 100px;
     @keyframes fadein {
         from {
             opacity: 0;

@@ -29,23 +29,10 @@ const options = [
 
 const Navbar = ({ match, history }) => {
     const limit = 1000;
-    const scrollBreak = 25;
     const currPath = match.url;
 
     const [active, setActive] = useState(false);
     const [currWidth, setCurrWidth] = useState(window.innerWidth);
-    const [currPos, setCurrPos] = useState(window.scrollY);
-
-    const updateScrollY = () => {
-        setCurrPos(window.scrollY);
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", updateScrollY);
-        return () => {
-            window.removeEventListener("scroll", updateScrollY);
-        };
-    }, []);
 
     const updateWidth = () => {
         setCurrWidth(window.innerWidth);
@@ -90,14 +77,7 @@ const Navbar = ({ match, history }) => {
     };
 
     return (
-        <StyledNav
-            className="noSelect"
-            style={
-                currPos <= scrollBreak
-                    ? { position: "relative" }
-                    : { position: "fixed" }
-            }
-        >
+        <StyledNav className="noSelect">
             <StyledContainer>
                 <StyledLogo
                     src={Logo}
@@ -151,6 +131,7 @@ const StyledNav = styled.nav`
     left: 0;
     right: 0;
     z-index: 1020;
+    position: fixed;
     background-color: #fff;
 `;
 
