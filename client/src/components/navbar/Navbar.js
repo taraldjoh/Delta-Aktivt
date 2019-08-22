@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 import Logo from "../../images/Logo.png";
-import RenderNavLinks from "./RenderNavLinks";
-import NavMobile from "./NavMobile";
+import { X, Menu } from "react-feather";
 
 const options = [
     {
@@ -28,13 +27,18 @@ const options = [
     }
 ];
 
-const Navbar = ({ history }) => {
+const Navbar = ({ match, history }) => {
     const limit = 1000;
-    const scrollBreak = 50;
+    const scrollBreak = 25;
+    const currPath = match.url;
 
+    const [active, setActive] = useState(false);
     const [currWidth, setCurrWidth] = useState(window.innerWidth);
     const [currPos, setCurrPos] = useState(window.scrollY);
-    console.log(currPos);
+
+    const updateScrollY = () => {
+        setCurrPos(window.scrollY);
+    };
 
     useEffect(() => {
         window.addEventListener("scroll", updateScrollY);
@@ -43,8 +47,8 @@ const Navbar = ({ history }) => {
         };
     }, []);
 
-    const updateScrollY = () => {
-        setCurrPos(window.scrollY);
+    const updateWidth = () => {
+        setCurrWidth(window.innerWidth);
     };
 
     useEffect(() => {
@@ -54,8 +58,9 @@ const Navbar = ({ history }) => {
         };
     }, []);
 
-    const updateWidth = () => {
-        setCurrWidth(window.innerWidth);
+    const goTo = path => {
+        history.push(path);
+        setActive(false);
     };
 
     const renderOptions = () => {
@@ -63,12 +68,25 @@ const Navbar = ({ history }) => {
             return (
                 <StyledLi
                     key={`nav-item-${i}`}
-                    onClick={() => history.push(`${option.path}`)}
+                    onClick={() => goTo(`${option.path}`)}
+                    className={option.path === currPath ? "current" : null}
                 >
                     {option.text}
                 </StyledLi>
             );
         });
+    };
+
+    const renderMobileMenu = () => {
+        if (!active) return;
+
+        return (
+            <StyledWrapper active={active}>
+                <StyledNavItemContainer>
+                    {renderOptions()}
+                </StyledNavItemContainer>
+            </StyledWrapper>
+        );
     };
 
     return (
@@ -89,7 +107,16 @@ const Navbar = ({ history }) => {
                     alt="brand-logo"
                 />
                 {currWidth <= limit ? (
-                    <NavMobile />
+                    <Fragment>
+                        <StyledTrigger
+                            onClick={() => setActive(!active)}
+                            tabIndex="0"
+                            active={active}
+                        >
+                            {active ? <X size={35} /> : <Menu size={35} />}
+                        </StyledTrigger>
+                        {renderMobileMenu()}
+                    </Fragment>
                 ) : (
                     <StyledUl>{renderOptions()}</StyledUl>
                 )}
@@ -99,6 +126,24 @@ const Navbar = ({ history }) => {
 };
 
 export default withRouter(Navbar);
+
+const StyledNavItemContainer = styled.ul`
+    display: flex;
+    flex-direction: column;
+`;
+
+const StyledTrigger = styled.div`
+    top: 35px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+    color: #158175;
+`;
+
+const StyledWrapper = styled.div`
+    display: ${({ active }) => (active ? "block" : "none")};
+    transition: opacity 0.2s ease-in-out;
+`;
 
 const StyledNav = styled.nav`
     width: 100%;
@@ -116,9 +161,13 @@ const StyledContainer = styled.div`
     justify-content: space-between;
     display: flex;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
         margin: 0 2rem;
+    }
+
+    .current {
+        color: #d500b0;
     }
 `;
 
