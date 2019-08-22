@@ -8,13 +8,14 @@ import About from "../about/About";
 import Exercise from "../exercise/Exercise";
 import Services from "../services/Services";
 import Activities from "../activities/Activities";
+import ScrollToTop from "../../lib/ScrollToTop";
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Route path="/*" component={Navbar} />
-
-            <Switch>
+            <ScrollToTop />
+            <Switch onUpdate={() => window.scrollTo(0, 0)}>
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/exercise" component={Exercise} />

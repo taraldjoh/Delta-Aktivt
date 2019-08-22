@@ -86,6 +86,11 @@ const StyledCaptionContainer = styled.div`
 
     @media screen and (max-width: 1000px) {
         width: 70%;
+        font-size: 0.75rem;
+    }
+
+    @media screen and (max-width: 600) {
+        display: none;
     }
 `;
 
@@ -95,7 +100,7 @@ const StyledHeader = styled.p`
     font-size: 1.75rem;
 
     @media screen and (max-width: 1000px) {
-        font-size: 1.25rem;
+        font-size: 0.75rem;
     }
 `;
 

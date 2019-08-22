@@ -77,6 +77,9 @@ const StyledFooter = styled.footer`
     background-color: #158175;
     color: #fff;
     height: 150px;
+    @media screen and (max-width: 550px) {
+        height: 100%;
+    }
 `;
 
 const StyledFooterContainer = styled.div`
@@ -85,6 +88,14 @@ const StyledFooterContainer = styled.div`
     margin: 0 5rem;
     padding: 0 1rem;
     height: 100%;
+
+    @media screen and (max-width: 750px) {
+        margin: 0 0.5rem;
+    }
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
 `;
 
 const StyledSection = styled.div`
@@ -121,6 +132,13 @@ const StyledSection = styled.div`
     .sectionThree {
         flex-direction: column;
         text-align: right;
+    }
+
+    @media screen and (max-width: 550px) {
+        padding: 1rem 0;
+        .sectionThree {
+            text-align: center;
+        }
     }
 `;
 

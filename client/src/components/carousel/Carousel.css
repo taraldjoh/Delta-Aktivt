@@ -20,3 +20,9 @@
         margin: 0 0.5rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .carousel {
+        display: none;
+    }
+}
