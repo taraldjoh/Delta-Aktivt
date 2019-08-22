@@ -95,6 +95,8 @@ const StyledFooterContainer = styled.div`
     @media screen and (max-width: 550px) {
         flex-direction: column;
         padding: 2rem 1rem;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
