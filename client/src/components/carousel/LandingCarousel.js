@@ -38,7 +38,7 @@ const LandingCarousel = ({ history }) => {
         return carouselItems.map((items, i) => {
             return (
                 <div key={`carousel-item-${i}`}>
-                    <img src={items.image} />
+                    <img src={items.image} alt={"qwe"} />
                     <StyledCaptionContainer>
                         <StyledHeader>{items.header}</StyledHeader>
                         <StyledP>{items.text}</StyledP>

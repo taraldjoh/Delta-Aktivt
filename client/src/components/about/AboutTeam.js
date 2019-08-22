@@ -72,7 +72,7 @@ const AboutTeam = () => {
     const renderTeamMembers = () => {
         return teamMembers.map((member, i) => {
             return (
-                <StyledImageContainer>
+                <StyledImageContainer key={`item-${i}`}>
                     <RoundImage image={member.image} />
                     <StyledTextContainer>
                         <StyledNameHeader>{member.name}</StyledNameHeader>

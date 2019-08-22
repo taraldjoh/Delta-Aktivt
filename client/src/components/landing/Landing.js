@@ -34,6 +34,7 @@ const Landing = () => {
         return images.map((image, i) => {
             return (
                 <RoundImage
+                    key={`item-${i}`}
                     image={image.image}
                     text={image.text}
                     destination={image.destination}

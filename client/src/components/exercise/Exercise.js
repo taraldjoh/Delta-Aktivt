@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import HeaderImage from "../common/HeaderImage";
 
 import treningsheader from "../../images/exercise/treningheader.png";
