@@ -3,24 +3,28 @@ import styled from "styled-components";
 
 const pricedProducts = [
     {
+        name: "Massasje på bedrift",
+        price: "350,-"
+    },
+    {
         name: "Førstegangskonsultasjon (m/undersøkelse)",
-        price: "550,-"
+        price: "600,-"
     },
     {
         name: "Fysikalsk behandling inntil 45 min",
-        price: "400,-"
+        price: "450,-"
     },
     {
         name: "Massasje 30 min",
-        price: "350,-"
+        price: "400,-"
     },
     {
         name: "Massasje 60 min",
         price: "700,-"
     },
     {
-        name: "Sjokkbølgebehandling",
-        price: "500,-"
+        name: "Trykkbølgebehandling",
+        price: "550,-"
     },
     {
         name: "Personlig trening førstegangskonsultasjon",
@@ -36,7 +40,7 @@ const pricedProducts = [
     },
     {
         name: "Fotanalyse og individuell tilpasning av Formthotics såler",
-        price: "1350,-"
+        price: "1400,-"
     }
 ];
 

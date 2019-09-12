@@ -52,7 +52,7 @@ const Footer = ({ history }) => {
                     <li>ALL RIGHTS RESERVED</li>
                     <li>
                         <StyledA
-                            href="/gdpr/PERSONVERNERKLÆRING%20for%20Delta%20Aktivt%20AS.pdf"
+                            href="deltaaktivt.no/gdpr/PERSONVERNERKLÆRING%20for%20Delta%20Aktivt%20AS.pdf"
                             target="_blank"
                         >
                             PERSONVÆRNSERKLÆRING
