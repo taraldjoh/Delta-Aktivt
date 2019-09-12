@@ -15,8 +15,8 @@ const Exercise = () => {
             <HeaderImage image={treningsheader} text={"TRENING"} />
             <Container>
                 <Schedule />
-                <SplitTextContainer textLeft={textLeft} textRight={textRight} />
                 <GroupTraining />
+                <SplitTextContainer textLeft={textLeft} textRight={textRight} />
             </Container>
         </Wrapper>
     );

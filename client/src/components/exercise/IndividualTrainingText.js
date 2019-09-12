@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledLeftHeader = styled.h3`
     color: #000;
     margin: 0.5rem 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
 `;
@@ -12,12 +12,13 @@ const StyledLeftHeader = styled.h3`
 const StyledLeftP = styled.p`
     line-height: 1.5;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.15rem;
     margin: 1.5rem 0;
 `;
 
 const StyledRightP = styled.p`
-    font-size: 1rem;
+    line-height: 1.5;
+    font-size: 1.15rem;
     margin-bottom: 1.5rem;
     text-align: left;
 `;
@@ -28,7 +29,7 @@ export const textRight = (
             <StyledLeftHeader>Personlig Trener</StyledLeftHeader>
             <StyledLeftP>
                 En personlig trener vil hjelpe deg med treningen uansett hvilke
-                mål og hvilke erfaring du ha
+                mål og hvilken erfaring du har.
             </StyledLeftP>
             <StyledLeftP>
                 Mange har et behov for å komme i gang med trening, men vet
@@ -36,9 +37,6 @@ export const textRight = (
                 motivator til å hjelpe til med å få fremgang og resultat. Er
                 dette noe du har ønske om, kan våre fysioterapeut er hjelpe deg
                 med deg.
-            </StyledLeftP>
-            <StyledLeftP>
-                IINGRID GRANØIEN TLF 928 54 488 INGRID@DELTAAKTIVT.NO
             </StyledLeftP>
             <StyledLeftP>
                 CAROLINE STRAND TLF: 469 08 316 CAROLINE@DELTAAKTIVT.NO
