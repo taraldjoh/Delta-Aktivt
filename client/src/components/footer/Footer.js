@@ -50,6 +50,14 @@ const Footer = ({ history }) => {
                 <StyledUl className={"sectionThree"}>
                     <li>DELTA AKTIVT 2019</li>
                     <li>ALL RIGHTS RESERVED</li>
+                    <li>
+                        <StyledA
+                            href="/gdpr/PERSONVERNERKLÆRING%20for%20Delta%20Aktivt%20AS.pdf"
+                            target="_blank"
+                        >
+                            PERSONVÆRNSERKLÆRING
+                        </StyledA>
+                    </li>
                 </StyledUl>
             )
         }
@@ -104,6 +112,13 @@ const StyledSection = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
+    a {
+        color: #fff;
+    }
+
+    li {
+        margin: 0.15rem 0;
+    }
 
     .sectionOne {
         flex-direction: column;
@@ -111,10 +126,6 @@ const StyledSection = styled.div`
     .sectionTwo {
         li {
             margin: 0 0.75rem;
-        }
-
-        a {
-            color: #fff;
         }
 
         p {
@@ -147,4 +158,12 @@ const StyledSection = styled.div`
 const StyledUl = styled.ul`
     margin: 0;
     display: flex;
+`;
+
+const StyledA = styled.a`
+    :hover {
+        color: #f98fa0;
+        cursor: pointer;
+        text-decoration: underline;
+    }
 `;
