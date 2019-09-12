@@ -29,12 +29,6 @@ const items = [
         image: "https://loremflickr.com/320/240/portrait"
     },
     {
-        title: "AEROBIC + STYRKE",
-        content:
-            "Aerobic er enkle stegvariasjoner med mål om moderat intensitet som gir kondisjonseffekt og varer i 35 min. Deretter starter styretrening i sirkel.  På denne gruppen kan du velge å komme til starttid eller til andre del som starter 35 min ut i timen. De som kommer direkte til styrkedelen oppfordres til å varme opp på forhånd.",
-        image: "https://loremflickr.com/320/240/portrait"
-    },
-    {
         title: "CROSS",
         content:
             "En effektiv sirkeltrening med 8-10 stasjoner, og annen hver stasjon er kondisjon og styrke. Det som er fint på denne timen er at alle trener i sitt tempo, derfor passer den for alle. Fysioterapeut vil hjelpe deg med å finne riktig belastning for deg.",

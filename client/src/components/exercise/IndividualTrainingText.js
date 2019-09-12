@@ -22,7 +22,7 @@ const StyledRightP = styled.p`
     text-align: left;
 `;
 
-export const textLeft = (
+export const textRight = (
     <Fragment>
         <div>
             <StyledLeftHeader>Personlig Trener</StyledLeftHeader>
@@ -50,33 +50,12 @@ export const textLeft = (
     </Fragment>
 );
 
-export const textRight = (
+export const textLeft = (
     <Fragment>
         <StyledLeftHeader>Bruk av Treningsrom</StyledLeftHeader>
         <StyledRightP>
-            HOS DELTA AKTIVT KAN DU DRIVE EGENTRENING I VÅRT TRENINGSROM MED
-            NØKKELKORT
-        </StyledRightP>
-        <StyledRightP>
-            Ønsker du å trene utholdenhet, styrke, bevegelighet eller balanse på
-            egenhånd i et hyggelig og imøtekommende miljø. Vi har et godt utvalg
-            av forskjellig utstyr i vårt treningsrom, blandt annet tredemøller,
-            spinningsykler, stasjonære styrkeapparater for overkropp og
-            underkropp, redcord/slynge og frivekter. Alt du trenger for en
-            effektiv og god treningsøkt. Utstyret har god kvalitet og levert av
-            kjente produsenter. Treningsrommet er brukervennlig noe som gjør at
-            du føler deg både trygg og komfortabel. Ved påmelding vil du få et
-            nøkkelkort for 100 kr for inngang til senteret. Vi tilbyr også
-            Personlig trening om du ønsker hjelp til å starte opp egentreningen,
-            trenger et treningsprogram eller ekstra motivasjon til å yte ditt
-            beste.
-        </StyledRightP>
-        <StyledRightP>
-            Medlemskap for bruk av treningsrommet: 350 kr per mnd
-        </StyledRightP>
-        <StyledRightP>
-            For mer informasjon og påmelding, kom gjerne innom klinikken for en
-            hyggelig prat eller eller send mail: ingrid@deltaaktivt.no
+            Om du ønsker bruk av treningsrom ta kontakt med house of motion
+            post@houseofmothion.no
         </StyledRightP>
     </Fragment>
 );
