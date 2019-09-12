@@ -1,70 +1,81 @@
 import React from "react";
 import styled from "styled-components";
 import RoundImage from "../common/RoundImage";
+import caroline from "../../images/team/caroline.jpg";
+import hilde from "../../images/team/hilde.jpg";
+import ingrid from "../../images/team/ingrid.jpg";
+import marita from "../../images/team/marita.jpg";
+import marthe from "../../images/team/marthe.jpg";
+import pauline from "../../images/team/pauline.jpg";
+import ranveig from "../../images/team/ranveig.jpg";
+import renate from "../../images/team/renate.jpg";
+import susan from "../../images/team/susan.jpg";
+import thea from "../../images/team/thea.jpg";
+import filler from "../../images/team/t1.jpg";
 
 const teamMembers = [
     {
+        name: "Ingrid Granøien",
+        position: "innhaver",
+        image: ingrid
+    },
+    {
+        name: "Hilde Stette",
+        position: "innhaver",
+        image: hilde
+    },
+    {
         name: "Caroline Strand",
         position: "fysioterapaut",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: caroline
     },
     {
         name: "Thea Melkevik",
         position: "fysioterapaut",
-        image: "https://loremflickr.com/320/240/portrait",
+        image: filler,
         club: "trimklubben aktiv"
     },
     {
         name: "Mathilde Harstad",
         position: "instruktør",
         club: "trimklubben aktiv",
-        image: "https://loremflickr.com/320/240/portrait"
-    },
-    {
-        name: "Ingrid Granøien",
-        position: "innhaver",
-        image: "https://loremflickr.com/320/240/portrait"
-    },
-    {
-        name: "Hilde Stette",
-        position: "innhaver",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: filler
     },
     {
         name: "Marita Strømsheim",
         position: "instruktør",
         club: "trimklubben aktiv",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: marita
     },
     {
         name: "Pauline Holøyen",
         position: "fysioterapaut",
         club: "trimklubben aktiv",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: pauline
     },
     {
         name: "Marita Longva",
         position: "fysioterapaut",
         club: "trimklubben aktiv",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: filler
     },
     {
         name: "Marita Strømsheim",
         position: "fysioterapaut",
         club: "trimklubben aktiv",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: filler
     },
     {
         name: "Torunn Otnes",
         position: "fysioterapaut ",
         club: "trimklubben aktiv",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: filler
     },
     {
         name: "Eline Humlen Seth",
         position: "fysioterapaut",
         club: "aksla/godøy håndball",
-        image: "https://loremflickr.com/320/240/portrait"
+        image: filler
     }
 ];
 
