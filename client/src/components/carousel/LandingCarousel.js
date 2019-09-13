@@ -38,7 +38,7 @@ const LandingCarousel = ({ history }) => {
         return carouselItems.map((items, i) => {
             return (
                 <div key={`carousel-item-${i}`}>
-                    <img src={items.image} alt={"qwe"} />
+                    <StyledImg src={items.image} />
                     <StyledCaptionContainer>
                         <StyledHeader>{items.header}</StyledHeader>
                         <StyledP>{items.text}</StyledP>
@@ -142,4 +142,12 @@ const StyledButton = styled.button`
         right: 50px;
         font-size: 1rem;
     }
+`;
+
+const StyledImg = styled.div`
+    background-image: url(${props => props.src});
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
 `;
