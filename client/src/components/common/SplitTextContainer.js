@@ -41,7 +41,7 @@ const StyledLeftContainer = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     @media screen and (max-width: 400px) {

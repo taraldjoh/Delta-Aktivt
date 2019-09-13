@@ -4,34 +4,45 @@ import styled from "styled-components";
 const StyledLeftHeader = styled.h3`
     color: #000;
     margin: 0.5rem 0;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: bold;
+    text-transform: uppercase;
 `;
 
 const StyledLeftP = styled.p`
     line-height: 1.5;
     margin: 1.5rem 0;
+    text-transform: uppercase;
+    font-size: 1.15rem;
 `;
 
 const StyledRightP = styled.p`
     line-height: 2;
     text-align: left;
     margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
 `;
 
+const Wrapper = styled.div``;
+
 export const textLeft = (
-    <Fragment>
+    <Wrapper>
         <StyledLeftHeader>PARKERING</StyledLeftHeader>
         <StyledLeftP>
             LIGGER I ROLIGE OMGIVELSER MED LEIKEPLASSEN TIL BARNEHAGEN LIKE VED
             OG EN LITEN FOTBALLBANE NEDE PÅ GAMLE KRÅMYRA. DER ER GODT MED
             PARKERINGSPLASSER.
         </StyledLeftP>
-    </Fragment>
+        <StyledLeftHeader>House of Motion</StyledLeftHeader>
+        <StyledLeftP>
+            Delta er per idag i et samarbeid med house of motion.
+        </StyledLeftP>
+    </Wrapper>
 );
 
 export const textRight = (
-    <Fragment>
+    <Wrapper>
         <StyledRightP>
             Per i dag er det 9 instruktører knyttet til Delta Aktivt og
             Trimklubben Aktiv. I Delta Aktivt er det tilknyttet 2
@@ -63,5 +74,5 @@ export const textRight = (
             helserelatert tilbud i bedriftene, er lavere sykefravær og økt
             trivsel."
         </StyledRightP>
-    </Fragment>
+    </Wrapper>
 );

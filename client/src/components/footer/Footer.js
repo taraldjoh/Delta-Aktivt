@@ -4,45 +4,21 @@ import { withRouter } from "react-router-dom";
 
 import { Facebook, Instagram } from "react-feather";
 
-const Footer = ({ history }) => {
+const Footer = () => {
     const footerContent = [
         {
             content: (
                 <StyledUl className={"sectionOne"}>
                     <li>Kråmyrvegen 3, 6007 Ålesund</li>
+                    <li>Telefon: 469 08 316</li>
+                    <li>
+                        Mail:{" "}
+                        <StyledA href="mailto:lise@deltaaktivt.no">
+                            lise@deltaaktivt.no
+                        </StyledA>
+                    </li>
                     <li>Org.nr. 911 574 861</li>
-                    <li>Telefon: 959 00 212</li>
-                    <li>Mail: ingrid@deltaaktivt.no</li>
                 </StyledUl>
-            )
-        },
-        {
-            content: (
-                <Fragment>
-                    <div className={"sectionTwo"}>
-                        <StyledUl>
-                            <li>
-                                <a
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    href="https://www.facebook.com/deltaaktivt"
-                                >
-                                    <Facebook size={75} />
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    href="https://www.instagram.com/deltaaktivt"
-                                >
-                                    <Instagram size={75} />
-                                </a>
-                            </li>
-                        </StyledUl>
-                        <p>@deltaaktivt</p>
-                    </div>
-                </Fragment>
             )
         },
         {
@@ -52,7 +28,7 @@ const Footer = ({ history }) => {
                     <li>ALL RIGHTS RESERVED</li>
                     <li>
                         <StyledA
-                            href="deltaaktivt.no/gdpr/PERSONVERNERKLÆRING%20for%20Delta%20Aktivt%20AS.pdf"
+                            href="http://www.deltaaktivt.no/gdpr/PERSONVERNERKLÆRING%20for%20Delta%20Aktivt%20AS.pdf"
                             target="_blank"
                         >
                             PERSONVÆRNSERKLÆRING

@@ -1,103 +1,47 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import RoundImage from "../common/RoundImage";
 import caroline from "../../images/team/caroline.jpg";
-import hilde from "../../images/team/hilde.jpg";
-import ingrid from "../../images/team/ingrid.jpg";
-import marita from "../../images/team/marita.jpg";
-import marthe from "../../images/team/marthe.jpg";
-import pauline from "../../images/team/pauline.jpg";
-import ranveig from "../../images/team/ranveig.jpg";
-import renate from "../../images/team/renate.jpg";
-import susan from "../../images/team/susan.jpg";
+import lise from "../../images/team/lise.jpg";
 import thea from "../../images/team/thea.jpg";
-import filler from "../../images/team/t1.jpg";
+import woman from "../../images/team/woman.jpg";
+import torunn from "../../images/team/torunn.png";
+import ingrid from "../../images/team/ingrid.jpg";
 
-const teamMembers = [
-    {
-        name: "Ingrid Granøien",
-        position: "innhaver",
-        image: ingrid
-    },
-    {
-        name: "Hilde Stette",
-        position: "innhaver",
-        image: hilde
-    },
-    {
-        name: "Caroline Strand",
-        position: "fysioterapaut",
-        image: caroline
-    },
-    {
-        name: "Thea Melkevik",
-        position: "fysioterapaut",
-        image: filler,
-        club: "trimklubben aktiv"
-    },
-    {
-        name: "Mathilde Harstad",
-        position: "instruktør",
-        club: "trimklubben aktiv",
-        image: filler
-    },
-    {
-        name: "Marita Strømsheim",
-        position: "instruktør",
-        club: "trimklubben aktiv",
-        image: marita
-    },
-    {
-        name: "Pauline Holøyen",
-        position: "fysioterapaut",
-        club: "trimklubben aktiv",
-        image: pauline
-    },
-    {
-        name: "Marita Longva",
-        position: "fysioterapaut",
-        club: "trimklubben aktiv",
-        image: filler
-    },
-    {
-        name: "Marita Strømsheim",
-        position: "fysioterapaut",
-        club: "trimklubben aktiv",
-        image: filler
-    },
-    {
-        name: "Torunn Otnes",
-        position: "fysioterapaut ",
-        club: "trimklubben aktiv",
-        image: filler
-    },
-    {
-        name: "Eline Humlen Seth",
-        position: "fysioterapaut",
-        club: "aksla/godøy håndball",
-        image: filler
-    }
-];
+const deltaAktiv = [lise, caroline, thea];
+const trimKlubben = [torunn, woman, ingrid];
 
 const AboutTeam = () => {
-    const renderTeamMembers = () => {
-        return teamMembers.map((member, i) => {
+    const renderDeltaAktiv = () => {
+        return deltaAktiv.map((member, i) => {
             return (
-                <StyledImageContainer key={`item-${i}`}>
-                    <RoundImage image={member.image} />
-                    <StyledTextContainer>
-                        <StyledNameHeader>{member.name}</StyledNameHeader>
-                        <StyledP>{member.position}</StyledP>
-                        <StyledP>{member.club}</StyledP>
-                    </StyledTextContainer>
-                </StyledImageContainer>
+                <Fragment>
+                    <StyledImageContainer key={`item-${i}`}>
+                        <RoundImage image={member} />
+                    </StyledImageContainer>
+                </Fragment>
+            );
+        });
+    };
+
+    const renderTrimklubben = () => {
+        return trimKlubben.map((member, i) => {
+            return (
+                <Fragment>
+                    <StyledImageContainer key={`item-${i}`}>
+                        <RoundImage image={member} />
+                    </StyledImageContainer>
+                </Fragment>
             );
         });
     };
 
     return (
         <StyledWrapper>
-            <StyledContainer>{renderTeamMembers()}</StyledContainer>
+            <StyledH1>Delta Aktivt</StyledH1>
+            <StyledContainer>{renderDeltaAktiv()}</StyledContainer>
+            <StyledH1>Trimklubben Aktiv</StyledH1>
+            <StyledContainer>{renderTrimklubben()}</StyledContainer>
         </StyledWrapper>
     );
 };
@@ -109,6 +53,7 @@ const StyledWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 4rem 0;
     padding: 2rem 0;
 `;
@@ -117,6 +62,7 @@ const StyledContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
+    margin-bottom: 6rem;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: repeat(2, 1fr);
@@ -127,25 +73,14 @@ const StyledContainer = styled.div`
     }
 `;
 
+const StyledH1 = styled.h1`
+    color: #606060;
+    font-size: 1.25rem;
+    margin-right: auto;
+    margin-bottom: 6rem;
+`;
+
 const StyledImageContainer = styled.div`
     display: flex;
     flex-direction: column;
-`;
-
-const StyledTextContainer = styled.div`
-    text-align: left;
-    width: 100%;
-`;
-
-const StyledNameHeader = styled.p`
-    margin-top: 1rem;
-    color: #f7668b;
-    font-weight: 600;
-    font-size: 1.5rem;
-`;
-
-const StyledP = styled.p`
-    color: #000;
-    font-size: 1rem;
-    font-weight: 600;
 `;

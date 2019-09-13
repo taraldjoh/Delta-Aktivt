@@ -6,7 +6,6 @@ import SplitTextContainer from "../common/SplitTextContainer";
 import Container from "../common/Container";
 import { textLeft, textRight } from "./AboutText";
 import AboutTeam from "./AboutTeam";
-import Privacy from "../privacy/Privacy";
 import Wrapper from "../common/Wrapper";
 import Title from "../common/Title";
 
@@ -18,7 +17,6 @@ const About = () => {
                 <SplitTextContainer textLeft={textLeft} textRight={textRight} />
                 <Title text="Vårt Team" />
                 <AboutTeam />
-                <Privacy />
             </Container>
         </Wrapper>
     );

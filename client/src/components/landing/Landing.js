@@ -23,7 +23,7 @@ const images = [
         destination: "/activities"
     },
     {
-        text: "bedrift",
+        text: "aktiviteter",
         image: round_3,
         destination: "/activities"
     }

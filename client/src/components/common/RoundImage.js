@@ -47,6 +47,7 @@ const StyledDiv = styled.div`
         background-image: url(${props => props.image});
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center center;
         z-index: -1;
         opacity: 1;
         transition: opacity 300ms;
