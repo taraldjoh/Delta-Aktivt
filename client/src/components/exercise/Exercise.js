@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderImage from "../common/HeaderImage";
 
-import treningsheader from "../../images/exercise/treningheader.png";
+import header from "../../images/picture_1.png";
 import Schedule from "../schedule/Schedule";
 import Container from "../common/Container";
 import SplitTextContainer from "../common/SplitTextContainer";
@@ -12,7 +12,7 @@ import Wrapper from "../common/Wrapper";
 const Exercise = () => {
     return (
         <Wrapper>
-            <HeaderImage image={treningsheader} text={"TRENING"} />
+            <HeaderImage image={header} text={"TRENING"} />
             <Container>
                 <Schedule />
                 <GroupTraining />

@@ -5,9 +5,9 @@ import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.
 import { Carousel } from "react-responsive-carousel";
 import "./Carousel.css";
 
-import slider_1 from "../../images/landing/carousel/slider_1.png";
-import slider_2 from "../../images/landing/carousel/slider_2.png";
-import slider_3 from "../../images/landing/carousel/slider_3.png";
+import slider_1 from "../../images/picture_1.png";
+import slider_2 from "../../images/picture_2.png";
+import slider_3 from "../../images/picture_3.png";
 
 const carouselItems = [
     {

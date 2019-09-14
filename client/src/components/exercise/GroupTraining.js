@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import RoundImage from "../common/RoundImage";
 import Title from "../common/Title";
 import Button from "../common/Button";
 

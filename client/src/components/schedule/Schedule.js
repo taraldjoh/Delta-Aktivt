@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 
-import timeplan from "../../images/exercise/timeplan.jpg";
+import timeplan from "../../images/timeplan.jpg";
 
 const Schedule = () => {
     return (

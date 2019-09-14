@@ -5,9 +5,9 @@ import Container from "../common/Container";
 import RoundImage from "../common/RoundImage";
 import Button from "../common/Button";
 
-import round_1 from "../../images/landing/round_1.png";
-import round_2 from "../../images/landing/round_2.png";
-import round_3 from "../../images/landing/round_3.png";
+import round_1 from "../../images/picture_1.png";
+import round_2 from "../../images/picture_2.png";
+import round_3 from "../../images/picture_3.png";
 
 import Wrapper from "../common/Wrapper";
 
