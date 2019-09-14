@@ -14,18 +14,18 @@ import Wrapper from "../common/Wrapper";
 const images = [
     {
         text: "trening",
-        image: round_1,
+        image: round_2,
         destination: "/exercise"
     },
     {
         text: "fysio",
-        image: round_2,
+        image: round_1,
         destination: "/activities"
     },
     {
-        text: "aktiviteter",
+        text: "tjenester",
         image: round_3,
-        destination: "/activities"
+        destination: "/services"
     }
 ];
 

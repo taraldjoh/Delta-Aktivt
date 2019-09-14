@@ -107,7 +107,6 @@ const Pricing = () => {
             {renderProducts()}
             <StyledTitle>Tileggskostnader</StyledTitle>
             {renderExtras()}
-            <StyledTitle>Betingelser</StyledTitle>
             {renderTerms()}
         </StyledWrapper>
     );
