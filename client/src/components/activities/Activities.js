@@ -3,7 +3,7 @@ import Wrapper from "../common/Wrapper";
 import HeaderImage from "../common/HeaderImage";
 import Title from "../common/Title";
 
-import header from "../../images/picture_4.png";
+import header from "../../images/picture_5.png";
 import Container from "../common/Container";
 import {
     slyngeKurs,

@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "../common/Wrapper";
 import HeaderImage from "../common/HeaderImage";
 
-import header from "../../images/picture_5.png";
+import header from "../../images/picture_2.png";
 import Container from "../common/Container";
 import PhysioMethods from "./PhysioMethods";
 import Title from "../common/Title";
