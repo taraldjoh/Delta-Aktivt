@@ -9,7 +9,7 @@ import {
     slyngeKurs,
     barnasMesterensMester,
     bedriftMesterenesMester,
-    kursLøpeteknik
+    lopsteknikk
 } from "./ActivitiesText";
 
 const Activities = () => {
@@ -23,8 +23,8 @@ const Activities = () => {
                 {barnasMesterensMester}
                 <Title text="Bedriftenes mesterens mester" />
                 {bedriftMesterenesMester}
-                <Title text="Kurs i løpsteknikk" />
-                {kursLøpeteknik}
+                <Title text="Løpsteknikk" />
+                {lopsteknikk}
             </Container>
         </Wrapper>
     );

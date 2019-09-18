@@ -8,8 +8,19 @@ import woman from "../../images/team/woman.jpg";
 import torunn from "../../images/team/torunn.png";
 import ingrid from "../../images/team/ingrid.jpg";
 
-const deltaAktiv = [lise, caroline, thea];
-const trimKlubben = [torunn, woman, ingrid];
+const deltaAktiv = [
+    {
+        name: "lise fjørtoft",
+        image: lise
+    },
+    { name: "caroline strand", image: caroline },
+    { name: "thea melkevik", image: thea }
+];
+const trimKlubben = [
+    { name: "torunn otnes", image: torunn },
+    { name: "mathilde harstad", image: woman },
+    { name: "ingrid granøien", image: ingrid }
+];
 
 const AboutTeam = () => {
     const renderDeltaAktiv = () => {
@@ -17,7 +28,8 @@ const AboutTeam = () => {
             return (
                 <Fragment>
                     <StyledImageContainer key={`item-${i}`}>
-                        <RoundImage image={member} />
+                        <RoundImage image={member.image} />
+                        <StyledP>{member.name}</StyledP>
                     </StyledImageContainer>
                 </Fragment>
             );
@@ -29,7 +41,8 @@ const AboutTeam = () => {
             return (
                 <Fragment>
                     <StyledImageContainer key={`item-${i}`}>
-                        <RoundImage image={member} />
+                        <RoundImage image={member.image} />
+                        <StyledP>{member.name}</StyledP>
                     </StyledImageContainer>
                 </Fragment>
             );
@@ -83,4 +96,11 @@ const StyledH1 = styled.h1`
 const StyledImageContainer = styled.div`
     display: flex;
     flex-direction: column;
+`;
+
+const StyledP = styled.p`
+    text-transform: uppercase;
+    color: #f7668b;
+    font-weight: bold;
+    font-size: 1.25rem;
 `;

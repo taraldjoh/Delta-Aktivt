@@ -48,7 +48,7 @@ export const slyngeKurs = (
             gode øvelser. Programmet kan lett gjøres også for tregere folk»
         </StyledP>
         <StyledContactP>
-            Ta kontakt med ingrid@deltaaktivt.no for mer informasjon og avtale.
+            Ta kontakt med lise@deltaaktivt.no for mer informasjon.{" "}
         </StyledContactP>
     </StyledWrapper>
 );
@@ -114,16 +114,15 @@ export const bedriftMesterenesMester = (
             vennegjenger.
         </StyledP>
         <StyledContactP>
-            Kan dette være noe for din bedrift, idrettslag eller vennegjeng? For
-            mer info ta kontakt på tlf. 469 08 316.
+            Ta kontakt med lise@deltaaktivt.no for mer informasjon.
         </StyledContactP>
     </StyledWrapper>
 );
 
-export const kursLøpeteknik = (
+export const lopsteknikk = (
     <StyledWrapper>
         <StyledP>
-            Løpebølgen er over oss igjen og vi ser mosjonister i alle aldre og
+            Løpebølgen er over oss og vi ser mosjonister i alle aldre og
             fasonger har lyst til å komme i gang med løping. Mange av oss tenker
             på hvordan vi kan løpe lettere, raskere og mindre anspent, MEN vet
             ikke helt hvordan vi skal gjøre det. Det ønsker vi å hjelpe deg med.
@@ -132,11 +131,10 @@ export const kursLøpeteknik = (
             tilbakemelding hele tiden i kurset. Kurset passer både for deg som
             er nybegynner, eller er vandt til å løpe og for deg som løper mye.
             Vi arrangerer kurs både for bedrifter og vennegjenger, minimum 4
-            personer
+            personer.
         </StyledP>
         <StyledContactP>
-            Ta kontakt med Ingrid Granøien ingrid@deltaaktivt.no eller tlf. 928
-            54 488 for mer informasjon.
+            Ta kontakt med lise@deltaaktivt.no for mer informasjon.
         </StyledContactP>
     </StyledWrapper>
 );

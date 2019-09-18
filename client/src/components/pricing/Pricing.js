@@ -46,20 +46,10 @@ const pricedProducts = [
 
 const extraItems = [
     {
-        name: "Kinesiotape (evt annen tape)",
-        price: "100,- per behandling"
+        name: "Kinesiotape (evt annen tape)"
     },
     {
-        name: "Nålebehandling",
-        price: "60,- per behandling"
-    },
-    {
-        name: "Utarbeiding av treningsprogram",
-        price: "50,-"
-    },
-    {
-        name: "Rapporter og attester (avhengig av omfang)",
-        price: "50 - 150,-"
+        name: "Nålebehandling"
     }
 ];
 
@@ -85,7 +75,6 @@ const Pricing = () => {
             return (
                 <StyledProductContainer key={`item-key${i}`}>
                     <StyledSpan>{item.name}</StyledSpan>
-                    <StyledSpan>{item.price}</StyledSpan>
                 </StyledProductContainer>
             );
         });
@@ -105,7 +94,7 @@ const Pricing = () => {
         <StyledWrapper>
             <StyledTitle>Gjeldende fra 1. Januar 2017</StyledTitle>
             {renderProducts()}
-            <StyledTitle>Tileggskostnader</StyledTitle>
+            <StyledTitle>Tilegg</StyledTitle>
             {renderExtras()}
             {renderTerms()}
         </StyledWrapper>

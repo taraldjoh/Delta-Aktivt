@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Button from "../common/Button";
 
 const listItems = [
-    "Tradisjonelle benkebehandling ",
     "Tradisjonelle benkebehandling",
-    "Øvelsesbehandling med bruk av:    Medisinsk treningsterapi   Redcord (slynge)",
+    "Triggerpunkt behandling - manuelt og ved bruk av dry needling/nåler",
+    "Øvelsesbehandling med bruk av: Medisinsk treningsterapi   Redcord (slynge)",
     "Veiledet trening / personlig trening ",
     "Sjokkbølgebehandling",
     "Kinesio taping ",
