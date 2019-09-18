@@ -30,7 +30,15 @@ const items = [
             "En effektiv sirkeltrening med 8-10 stasjoner, og annen hver stasjon er kondisjon og styrke. Det som er fint på denne timen er at alle trener i sitt tempo, derfor passer den for alle. Fysioterapeut vil hjelpe deg med å finne riktig belastning for deg."
     },
     {
-        content: <Button text="Bestill time" destination="/" />
+        content: (
+            <a
+                href="https://timebestilling.aspit.no/?fbclid=IwAR3NjTAjWkNTbqZkExkUOSf0gkSEKb511zyS0ljwIYDizz7TEppe0gR0HhQ#/p3547/main"
+                target="_blank"
+                rel="noopener nofreferrer"
+            >
+                <Button text="Bestill time" />
+            </a>
+        )
     }
 ];
 
@@ -38,7 +46,7 @@ const GroupTraining = () => {
     const renderItems = () => {
         return items.map((item, i) => {
             return (
-                <StyledItemContainer>
+                <StyledItemContainer key={i}>
                     <StyledTextContainer>
                         <StyledTextHeader>{item.title}</StyledTextHeader>
                         <StyledTextContent>{item.content}</StyledTextContent>
@@ -60,6 +68,7 @@ export default GroupTraining;
 
 const StyledWrapper = styled.div`
     margin: 4rem 0;
+    padding: 2rem 0;
 `;
 
 const StyledImageContainer = styled.div`

@@ -5,9 +5,13 @@ import styled from "styled-components";
 const Button = ({ text, destination, history }) => {
     return (
         <StyledButton
-            onClick={() => {
-                history.push(`${destination}`);
-            }}
+            onClick={
+                destination
+                    ? () => {
+                          history.push(`${destination}`);
+                      }
+                    : null
+            }
         >
             {text}
         </StyledButton>

@@ -48,7 +48,13 @@ const Landing = () => {
             <LandingCarousel />
             <Container>
                 <StyledHeader>Bestill time hos oss nå</StyledHeader>
-                <Button text="klikk her" destination="/about" />
+                <a
+                    href="https://timebestilling.aspit.no/?fbclid=IwAR3NjTAjWkNTbqZkExkUOSf0gkSEKb511zyS0ljwIYDizz7TEppe0gR0HhQ#/p3547/main"
+                    target="_blank"
+                    rel="noopener nofreferrer"
+                >
+                    <Button text="Bestill time" />
+                </a>
                 <StyledImageContainer>
                     {renderRoundImages()}
                 </StyledImageContainer>

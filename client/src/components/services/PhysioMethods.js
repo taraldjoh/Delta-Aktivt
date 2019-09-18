@@ -27,7 +27,13 @@ export default function PhysioMethods() {
     return (
         <Fragment>
             <StyledListItemWrapper>{renderListItems()}</StyledListItemWrapper>
-            <Button text="Bestill Time" destination="" />
+            <a
+                href="https://timebestilling.aspit.no/?fbclid=IwAR3NjTAjWkNTbqZkExkUOSf0gkSEKb511zyS0ljwIYDizz7TEppe0gR0HhQ#/p3547/main"
+                target="_blank"
+                rel="noopener nofreferrer"
+            >
+                <Button text="Bestill time" />
+            </a>
         </Fragment>
     );
 }
