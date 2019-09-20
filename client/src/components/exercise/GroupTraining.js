@@ -12,22 +12,22 @@ const items = [
     {
         title: "AKTIV PÅ DAGTID",
         content:
-            "Trening for deg som er langtidssykemeldt eller ufør. Inneholder både kondisjon- og styrketrening. Timen skal tilpasses den enkelts fysiske forutsetninger, slik at hver en kan trene på sitt ninå. God dialog mellom fysioterapeut/instryktør og deltaker."
+            "Trening for deg som er langtidssykemeldt eller ufør. Inneholder både kondisjon- og styrketrening. Timen skal tilpasses den enkelte fysiske forutsetninger, slik at hver og en kan trene på sitt nivå. God dialog mellom fysioterapeut/instruktør og deltaker."
     },
     {
         title: "BEDRIFTSTRENING",
         content:
-            "Bedrifter i Ålesund engasjere Delta Aktivt til å lede trening for ansatte. Treningen kan variere ut i fra både bedriftens, gruppen og den enkeltes behov. Treningen kan foregå både i arbeidstid eller etter arbeidstid. Treningen kan foregå i Delta Aktivt sine lokaer på Kråmyra 3 eller en annen plass og det er ønskelig. Trening utendørs er også et alternativ og gjennomføres per i dag."
+            "Bedrifter i Ålesund engasjerer Delta Aktivt til å lede trening for ansatte. Treningen kan variere ut i fra både bedriftens, gruppen og den enkeltes behov. Treningen kan foregå både i arbeidstid og etter arbeidstid. Det kan også settes opp trening i Delta Aktivt sine lokaler på Kråmyra eller i andre treningslokaler. Trening utendørs er også et alternativ og gjennomføres per i dagsdato."
     },
     {
         title: "4x4 INTERVALL MED STYRKE",
         content:
-            "Gruppe for deg som vil trene på ettermiddag/kveld. Intervalltrening 4x4 min blir i dag sett på som den mest effektiv måten å komme raskt i bedre kondisjon. På relativt kort tid opplever du stor fremgang. Trening er ganske tøff, men ikke tøffere enn den enkelte ønsker det. Treningen avsluttes med styrketrening i sirkel. Timen ledes av fysioterapeut."
+            "Gruppe for deg som vil trene på ettermiddag/kveld. Intervalltrening 4x4 er en god treningsform for å oppnå bedre kondisjon. På relativt kort tid kan du oppleve fremgang. Trening er ganske tøff, men ikke tøffere enn den enkelte ønsker det. Treningen avsluttes med styrketrening i sirkel. Timen ledes av fysioterapeut."
     },
     {
         title: "CROSS",
         content:
-            "En effektiv sirkeltrening med 8-10 stasjoner, og annen hver stasjon er kondisjon og styrke. Det som er fint på denne timen er at alle trener i sitt tempo, derfor passer den for alle. Fysioterapeut vil hjelpe deg med å finne riktig belastning for deg."
+            "En effektiv sirkeltrening med 8-10 stasjoner, der annen hver stasjon er kondisjon og styrke. Det som gjør at denne timen passer for alle, er at man kan trene i sitt eget tempo. Fysioterapeut vil hjelpe deg med å finne din riktige belastning."
     },
     {
         content: (

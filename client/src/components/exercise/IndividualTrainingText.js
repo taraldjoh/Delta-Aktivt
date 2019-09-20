@@ -28,21 +28,13 @@ export const textRight = (
         <div>
             <StyledLeftHeader>Personlig Trener</StyledLeftHeader>
             <StyledLeftP>
-                En personlig trener vil hjelpe deg med treningen uansett hvilke
-                mål og hvilken erfaring du har.
+            En personlig trener vil hjelpe deg uansett hvilke mål og erfaring du har.
             </StyledLeftP>
             <StyledLeftP>
-                Mange har et behov for å komme i gang med trening, men vet
-                samtidig at de trenger enten mer kunskap eller trenger en
-                motivator til å hjelpe til med å få fremgang og resultat. Er
-                dette noe du har ønske om, kan våre fysioterapeut er hjelpe deg
-                med deg.
+            Har du lyst å komme igang med trening? Våre fysioterapeuter hjelper deg gjerne. Vi kan gi deg den kunnskapen og veiledningen som gir deg motivasjon til videre trening.
             </StyledLeftP>
             <StyledLeftP>
-                CAROLINE STRAND TLF: 469 08 316 CAROLINE@DELTAAKTIVT.NO
-            </StyledLeftP>
-            <StyledLeftP>
-                THEA MELKEVIK TLF: 413 40 185 THEAMEL@DELTAAKTIVT.NO
+            CAROLINE STRAND TLF: 469 08 316 CAROLINE@DELTAAKTIVT.NO
             </StyledLeftP>
         </div>
     </Fragment>

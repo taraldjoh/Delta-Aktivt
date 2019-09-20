@@ -4,13 +4,13 @@ import Button from "../common/Button";
 
 const listItems = [
     "Tradisjonelle benkebehandling",
-    "Triggerpunkt behandling - manuelt og ved bruk av dry needling/nåler",
+    "Triggerpunktbehandling - manuelt og ved bruk av dry needling/nåler",
     "Øvelsesbehandling med bruk av: Medisinsk treningsterapi   Redcord (slynge)",
     "Veiledet trening / personlig trening ",
     "Sjokkbølgebehandling",
-    "Kinesio taping ",
+    "Kinesiotaping ",
     "Massasje ",
-    "Såletilpasning m/ Formthotics (les mer om dette her)"
+    "Såletilpasning m/ Formthotics"
 ];
 
 export default function PhysioMethods() {

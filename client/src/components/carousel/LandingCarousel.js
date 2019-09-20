@@ -14,7 +14,7 @@ const carouselItems = [
         image: slider_1,
         header: "Tjenester",
         text:
-            "Fysioterapi, Gruppe trening, Individuell trening, Personlig trener og Bedfriftstrening - alt på samme sted med gode parkeringsmulighet.",
+            "Fysioterapi, Gruppetrening, Individuell trening, Personlig trener og Bedfriftstrening - alt på samme sted med gode parkeringsmuligheter.",
         path: "/services"
     },
     {

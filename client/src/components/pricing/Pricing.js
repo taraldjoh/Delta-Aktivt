@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const pricedProducts = [
     {
-        name: "Massasje på bedrift",
+        name: "Massasje i bedrift",
         price: "350,-"
     },
     {
@@ -92,7 +92,7 @@ const Pricing = () => {
 
     return (
         <StyledWrapper>
-            <StyledTitle>Gjeldende fra 1. Januar 2017</StyledTitle>
+            <StyledTitle>Gjeldende fra 1. Januar 2019</StyledTitle>
             {renderProducts()}
             <StyledTitle>Tilegg</StyledTitle>
             {renderExtras()}

@@ -30,13 +30,11 @@ export const textLeft = (
     <Wrapper>
         <StyledLeftHeader>PARKERING</StyledLeftHeader>
         <StyledLeftP>
-            LIGGER I ROLIGE OMGIVELSER MED LEIKEPLASSEN TIL BARNEHAGEN LIKE VED
-            OG EN LITEN FOTBALLBANE NEDE PÅ GAMLE KRÅMYRA. DER ER GODT MED
-            PARKERINGSPLASSER.
+            Det er gode parkeringsmuligheter rett utenfor bygget.
         </StyledLeftP>
         <StyledLeftHeader>House of Motion</StyledLeftHeader>
         <StyledLeftP>
-            Delta er per idag i et samarbeid med house of motion.
+            Delta Aktivt er per idag i et samarbeid med house of motion.
         </StyledLeftP>
     </Wrapper>
 );
@@ -55,7 +53,7 @@ export const textRight = (
             kontakt med forskermiljøet i Norge (NTNU i Trondheim) som forsker på
             trening for mannen i gata. Det er dessuten generelt høy
             kursdeltagelse blant våre instruktører, og det er også noe vi
-            oppfordrer til."
+            oppfordrer til.
         </StyledRightP>
         <StyledRightP>
             Vi holder oss faglig oppdaterte til enhver tid, og bruker vår
@@ -69,10 +67,10 @@ export const textRight = (
         </StyledRightP>
         <StyledRightP>
             Vi har etterhvert opparbeidet oss en solid erfaring innen
-            bedriftstrening. Vi har flere store kunder som er svært fornøyde med
+            bedriftstrening og bedriftsbehandling. Vi har flere store kunder som er svært fornøyde med
             det tilbudet vi gir deres ansatte. En viktig konsekvens av
             helserelatert tilbud i bedriftene, er lavere sykefravær og økt
-            trivsel."
+            trivsel.
         </StyledRightP>
     </Wrapper>
 );
