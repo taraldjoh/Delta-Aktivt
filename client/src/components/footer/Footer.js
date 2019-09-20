@@ -123,7 +123,8 @@ const StyledSection = styled.div`
 
     @media screen and (max-width: 550px) {
         padding: 1rem 0;
-        .sectionThree {
+        .sectionThree,
+        .sectionOne {
             text-align: center;
         }
     }
@@ -132,6 +133,8 @@ const StyledSection = styled.div`
 const StyledUl = styled.ul`
     margin: 0;
     display: flex;
+
+    
 `;
 
 const StyledA = styled.a`

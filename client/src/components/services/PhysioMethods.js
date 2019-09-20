@@ -10,7 +10,6 @@ const listItems = [
     "Sjokkbølgebehandling",
     "Kinesiotaping ",
     "Massasje ",
-    "Såletilpasning m/ Formthotics"
 ];
 
 export default function PhysioMethods() {

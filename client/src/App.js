@@ -67,8 +67,10 @@ const GlobalStyle = createGlobalStyle`
 
     .clickable {
         cursor: pointer;
-        :hover::after {
+        @media screen and (min-width: 900px) {
+            :hover::after {
             opacity: 0.5;
+        }
         }
     }
 
