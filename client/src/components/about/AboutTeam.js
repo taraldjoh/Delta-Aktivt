@@ -4,6 +4,7 @@ import RoundImage from "../common/RoundImage";
 import caroline from "../../images/team/caroline.jpg";
 import lise from "../../images/team/lise.jpg";
 import thea from "../../images/team/thea.jpg";
+import mari from "../../images/team/mari_flem.jpg"
 import woman from "../../images/team/woman.jpg";
 import torunn from "../../images/team/torunn.png";
 import ingrid from "../../images/team/ingrid.jpg";
@@ -14,7 +15,7 @@ const deltaAktiv = [
         image: lise
     },
     { name: "caroline strand", image: caroline },
-    { name: "thea melkevik", image: thea }
+    { name: "mari flem", image: mari }
 ];
 const trimKlubben = [
     { name: "torunn otnes", image: torunn },
